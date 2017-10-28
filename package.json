@@ -1,0 +1,46 @@
+{
+  "name": "bookings",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "immutable": "^3.8.2",
+    "material-ui": "^0.19.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "dev": "",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.13",
+    "@storybook/addon-knobs": "^3.2.13",
+    "@storybook/addon-links": "^3.2.13",
+    "@storybook/react": "^3.2.13",
+    "@types/jest": "^21.1.5",
+    "@types/material-ui": "^0.18.3",
+    "@types/node": "^8.0.47",
+    "@types/react": "^16.0.18",
+    "@types/react-dom": "^16.0.2",
+    "@types/react-redux": "^5.0.11",
+    "@types/recompose": "^0.24.2",
+    "@types/redux-actions": "^2.2.2",
+    "@types/reselect": "^2.2.0",
+    "@types/storybook__react": "^3.0.5",
+    "react-scripts-ts": "2.8.0",
+    "recompose": "^0.26.0",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^6.0.1"
+  }
+}
