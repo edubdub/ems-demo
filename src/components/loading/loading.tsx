@@ -1,12 +1,19 @@
 import * as React from 'react'
-import Card from 'material-ui/Card'
 const logo = require('../../images/ems-software.png')
+const style = {
+  textAlign: 'center',
+  display: 'block',
+  position: 'fixed',
+  top: 100,
+  left: '50%',
+  transform: 'translateX(-50%)'
+}
 export default class Loading extends React.PureComponent {
   render() {
     return (
-      <Card>
+      <div style={style as any}>
         <img className="loadingSpinner" src={logo} />
-      </Card>
+      </div>
     )
   }
 }

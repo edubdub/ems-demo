@@ -6,16 +6,17 @@ const DemoComponent: React.StatelessComponent<{ title?: string }> = props => (
 )
 const falseSelector: () => boolean = () => false
 const trueSelector: () => boolean = () => true
+
 storiesOf('HOC/loading', module)
   .add('loading: true', () => {
-    const SmartLoading = LoadingHOC(DemoComponent, trueSelector)
+    const SmartLoading = LoadingHOC(trueSelector)(DemoComponent)
     return <SmartLoading />
   })
   .add('loading: false', () => {
-    const SmartLoading = LoadingHOC(DemoComponent, falseSelector)
+    const SmartLoading = LoadingHOC(falseSelector)(DemoComponent)
     return <SmartLoading />
   })
   .add('loading: false w/ title', () => {
-    const SmartLoading = LoadingHOC(DemoComponent, falseSelector)
+    const SmartLoading = LoadingHOC(falseSelector)(DemoComponent)
     return <SmartLoading title="Hello" />
   })

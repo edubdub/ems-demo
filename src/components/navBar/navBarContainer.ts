@@ -1,5 +1,5 @@
 import { compose } from 'redux'
-import NavBar from '../../components/navBar/navBar'
+import NavBar from './navBar'
 export default compose(
 
 )(NavBar)

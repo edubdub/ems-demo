@@ -19,5 +19,6 @@ const CenterDecorator = (storyFn: Function) => (
 )
 addDecorator(CenterDecorator)
 
-require('./loading/loading.story.tsx')
+require('./loading/loading.story')
 require('./navBar/navBar.story')
+require('./bookings/bookings.story')

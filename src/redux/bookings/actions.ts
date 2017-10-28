@@ -1,4 +1,4 @@
-import { createActions } from 'redux-actions'
+import { createAction } from 'redux-actions'
 import { List } from 'immutable'
 import { Booking } from '../../models/booking'
 
@@ -7,7 +7,7 @@ export const actions = {
   SET_BOOKINGS: 'SET_BOOKINGS'
 }
 
-export const actionCreators = createActions({
-  [actions.LOAD_BOOKINGS]: () => null,
-  [actions.SET_BOOKINGS]: (payload: List<Booking>) => payload
-})
+export const actionCreators = {
+  loadBookings: createAction(actions.LOAD_BOOKINGS, () => null),
+  setBookings: createAction(actions.SET_BOOKINGS, (payload: Booking[]|List<Booking>) => List(payload))
+}

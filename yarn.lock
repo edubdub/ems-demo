@@ -197,6 +197,12 @@
     "@types/react" "*"
     redux "^3.6.0"
 
+"@types/react-transition-group@1.x":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-1.1.2.tgz#a349e70788a6dc723a5f439217011ef926c27b4f"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^16.0.18":
   version "16.0.18"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.18.tgz#c08eea79ada55bf10b5353e18c21797dd17afa23"
@@ -216,6 +222,12 @@
   resolved "https://registry.yarnpkg.com/@types/reselect/-/reselect-2.2.0.tgz#c667206cfdc38190e1d379babe08865b2288575f"
   dependencies:
     reselect "*"
+
+"@types/storybook__addon-knobs@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@types/storybook__addon-knobs/-/storybook__addon-knobs-3.2.1.tgz#d16f1e8d0bd4c52d0a3736ab93a5782493e82cf5"
+  dependencies:
+    "@types/react" "*"
 
 "@types/storybook__react@^3.0.5":
   version "3.0.5"
@@ -6044,7 +6056,7 @@ react-textarea-autosize@^4.3.0:
   dependencies:
     prop-types "^15.5.8"
 
-react-transition-group@^1.1.2, react-transition-group@^1.2.1:
+react-transition-group@1.x, react-transition-group@^1.1.2, react-transition-group@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
   dependencies:

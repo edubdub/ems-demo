@@ -1,5 +1,11 @@
 import React from 'react'
-import { storiesOf, configure, addDecorator, color } from '@storybook/react'
+import {
+  storiesOf,
+  configure,
+  addDecorator,
+  color,
+  setAddon
+} from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 import { withKnobs, select } from '@storybook/addon-knobs'
@@ -9,7 +15,7 @@ import { Provider } from 'react-redux'
 import { store } from '../src/redux/store'
 import 'font-awesome/css/font-awesome.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-
+addDecorator(withKnobs)
 const MUIDecorator = (storyFn: Function) => (
   <MuiThemeProvider>{storyFn()}</MuiThemeProvider>
 )
@@ -31,17 +37,15 @@ function loadStories() {
 }
 configure(loadStories, module)
 
-const stories = storiesOf('Font-awesome', module)
-  .addDecorator(withKnobs)
-  .add('icons', () => (
-    <i
-      className={`fa ${select('icon', icons, 'fa-plus')} ${select(
-        'size',
-        ['', 'fg-lg', 'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x'],
-        ''
-      )}`}
-    />
-  ))
+const stories = storiesOf('Font-awesome', module).add('icons', () => (
+  <i
+    className={`fa ${select('icon', icons, 'fa-plus')} ${select(
+      'size',
+      ['', 'fg-lg', 'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x'],
+      ''
+    )}`}
+  />
+))
 
 const icons = [
   'fa-glass',

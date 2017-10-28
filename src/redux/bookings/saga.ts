@@ -1,5 +1,5 @@
-import { takeLatest, call } from 'redux-saga/effects'
-import { actions } from './actions'
+import { takeLatest, call, put } from 'redux-saga/effects'
+import { actions, actionCreators } from './actions'
 import * as bookingService from '../../services/bookings'
 export function * bookingSaga() {
   console.log('sagas work')
@@ -9,5 +9,5 @@ export function * bookingSaga() {
 
 export function * loadBookings () {
   const bookings = yield call(bookingService.requestBookings)
-  console.log('bookings', bookings)
+  yield put(actionCreators.setBookings(bookings))
 }

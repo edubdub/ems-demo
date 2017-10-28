@@ -1,10 +1,10 @@
 .loadingSpinner {
   max-width: 100px;
   animation-name: loader-spin;
-  animation-duration: 4s; /* or: Xms */
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-;
-  animation-fill-mode: none; /* or: backwards, both, none */
+  animation-fill-mode: none;
   margin: 20px;
 }
 @keyframes loader-spin {
@@ -15,4 +15,22 @@
   100% {
     transform: rotate(1080deg);
   }
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
