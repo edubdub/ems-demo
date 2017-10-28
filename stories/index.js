@@ -9,20 +9,25 @@ import { Provider } from 'react-redux'
 import { store } from '../src/redux/store'
 import 'font-awesome/css/font-awesome.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
+const MUIDecorator = (storyFn: Function) => (
+  <MuiThemeProvider>{storyFn()}</MuiThemeProvider>
+)
+addDecorator(MUIDecorator)
+const StoreDecorator = (storyFn: Function) => (
+  <Provider store={store}>{storyFn()}</Provider>
+)
+addDecorator(StoreDecorator)
+
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
 ))
 
-storiesOf('App', module).add('App', () => (
-  <MuiThemeProvider>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </MuiThemeProvider>
-))
+storiesOf('App', module).add('App', () => <App />)
 
 function loadStories() {
   require('../src/components/stories')
+  require('../src/hoc/stories')
 }
 configure(loadStories, module)
 

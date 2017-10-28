@@ -6,7 +6,8 @@ export function requestBookings(maxTimeInSeconds = 3): Promise<Booking[]> {
   )
 }
 
-const data: Booking[] = [
+// since it's here, we might as well use it in our tests
+export const data: Booking[] = [
   {
     id: 0,
     eventName: 'Test Booking 01',
