@@ -18,6 +18,7 @@ export default class NavBar extends React.PureComponent<{
   onDateChange: (date: Date) => any
   onSearchTermChange: (term: string) => any
   onFuzzySearchChange: (value: boolean) => any
+  onPlusClick: () => any
 }> {
   state = {
     searchMode: false
@@ -113,6 +114,8 @@ export default class NavBar extends React.PureComponent<{
                   }
                 />
                 <FlatButton
+                  onKeyPress={this.props.onPlusClick}
+                  onClick={this.props.onPlusClick}
                   style={{ height: '100%' }}
                   label={<FontIcon color={white} className="fa fa-plus" />}
                 />

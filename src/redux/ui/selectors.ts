@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect'
 import { IState } from '../store'
 import { List } from 'immutable'
+const addEventOpen = (state: IState) => state.ui.addEventOpen
 const navBarHeight = (state: IState) => state.ui.navBarHeight
 const navDate = (state: IState) => state.ui.navDate
 const bookingDatePositions = (state: IState) => state.ui.bookingDatesToWindowPositions
@@ -16,6 +17,7 @@ const positionOfSelectedDate = createSelector(navDate, bookingDatePositions, (se
 })
 
 export default {
+  addEventOpen,
   navBarHeight,
   navDate,
   bookingDatePositions,

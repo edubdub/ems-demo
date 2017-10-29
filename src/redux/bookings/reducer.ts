@@ -6,13 +6,15 @@ const initialState = {
   loading: false,
   bookings: List<{}>(),
   searchTerms: '',
-  useFuzzySearch: true
+  useFuzzySearch: true,
+  addEventOpen: false
 }
 export class BookingState extends Record(initialState) {
   loading: boolean
   bookings: List<Booking>
   searchTerms: string
   useFuzzySearch: boolean
+  addEventOpen: false
 }
 const defaultState = new BookingState(initialState)
 const reducer = handleActions({

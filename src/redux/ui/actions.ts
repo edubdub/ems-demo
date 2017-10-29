@@ -4,7 +4,7 @@ export const actions = {
   SET_BOOKING_DATE_WINDOW_POSITION: 'SET_BOOKING_DATE_WINDOW_POSITION',
   USER_SET_NAV_DATE: 'USER_SET_NAV_DATE',
   SET_NAV_DATE: 'SET_NAV_DATE',
-  SET_SHOULD_NAVIGATE: 'SET_SHOULD_NAVIGATE'
+  SET_ADD_EVENT_OPEN: 'SET_ADD_EVENT_OPEN'
 }
 
 export const actionCreators = {
@@ -15,5 +15,6 @@ export const actionCreators = {
       bookingDate, position
     })),
   userSetNavDate: createAction<Date>(actions.USER_SET_NAV_DATE),
-  setNavDate: createAction<Date>(actions.SET_NAV_DATE)
+  setNavDate: createAction<Date>(actions.SET_NAV_DATE),
+  setAddEventOpen: createAction<boolean>(actions.SET_ADD_EVENT_OPEN)
 }

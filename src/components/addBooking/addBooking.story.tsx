@@ -6,4 +6,6 @@ storiesOf('components/addBooking', module)
   .add('open', () => (
     <AddBooking open onRequestClose={action('requestClose')} />
   ))
-  .add('closed', () => <AddBooking open={false} />)
+  .add('closed', () => (
+    <AddBooking open={false} onRequestClose={action('requestClose')} />
+  ))

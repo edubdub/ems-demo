@@ -14,6 +14,7 @@ export default compose(
     heightRealized: actions.ui.setNavBarHeight,
     onDateChange: actions.ui.userSetNavDate,
     onSearchTermChange: actions.bookings.setSearchTerms,
-    onFuzzySearchChange: actions.bookings.setUseFuzzySearch
+    onFuzzySearchChange: actions.bookings.setUseFuzzySearch,
+    onPlusClick: () => actions.ui.setAddEventOpen(true)
   })
 )(NavBar)

@@ -5,13 +5,15 @@ const initialState = {
   navBarHeight: 64,
   bookingDatesToWindowPositions: List(),
   navDate: new Date(),
-  shouldNavigateToDate: false
+  shouldNavigateToDate: false,
+  addEventOpen: false
 }
 export class UIState extends Record(initialState) {
   navBarHeight: number
   bookingDatesToWindowPositions: List<{bookingDate: Date, position: number}>
   navDate: Date
   shouldNavigateToDate: boolean
+  addEventOpen: boolean
 }
 const defaultState = new UIState(initialState)
 const reducer = handleActions({
@@ -30,8 +32,8 @@ const reducer = handleActions({
   [combineActions(actions.USER_SET_NAV_DATE, actions.SET_NAV_DATE)]: (state: UIState, action: Action<Date>) => {
     return state.set('navDate', action.payload).set('shouldNavigateToDate', true)
   },
-  [actions.SET_SHOULD_NAVIGATE]: (state: UIState, action: Action<boolean>) => {
-    return state.set('shouldNavigateToDate', action.payload)
+  [actions.SET_ADD_EVENT_OPEN]: (state: UIState, action: Action<boolean>) => {
+    return state.set('addEventOpen', action.payload)
   }
 } as any, defaultState)
 

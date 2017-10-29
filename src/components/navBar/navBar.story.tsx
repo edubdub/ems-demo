@@ -11,6 +11,7 @@ storiesOf('components/navBar', module).add('default', () => (
     onSearchTermChange={action('onSearchTermChange')}
     fuzzySearch={true}
     onFuzzySearchChange={action('onFuzzySearchChange')}
+    onPlusClick={action('onPlusClick')}
     searchTerm={'steve'}
   />
 ))
