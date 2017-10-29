@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Paper from 'material-ui/Paper'
 const logo = require('../../images/ems-software.png')
 const style = {
   textAlign: 'center',
@@ -11,9 +12,9 @@ const style = {
 export default class Loading extends React.PureComponent {
   render() {
     return (
-      <div style={style as any}>
+      <Paper style={style as any} circle>
         <img className="loadingSpinner" src={logo} />
-      </div>
+      </Paper>
     )
   }
 }

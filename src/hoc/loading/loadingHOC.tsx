@@ -17,9 +17,6 @@ export default (loadingSelector: LoadingSelector) => {
         HOCLoading: boolean
         ownProps: T
       }> {
-        componentWillUnmount() {
-          console.log('unmounted')
-        }
         render() {
           return (
             <span>

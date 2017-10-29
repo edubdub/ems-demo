@@ -6,13 +6,13 @@ import { IState } from '../../redux/store'
 import selectors from '../../redux/selectors'
 import Loading from '../../hoc/loading/loadingHOC'
 import actionsCreators from '../../redux/actions'
-console.log(actionsCreators.bookings)
 export default compose(
   connect((state: IState) => ({
     bookingsByDay: selectors.bookings.bookingsByDate(state)
   }),
     {
-      loadBookings: actionsCreators.bookings.loadBookings
+      loadBookings: actionsCreators.bookings.loadBookings,
+      bookingPositionRealized: actionsCreators.ui.setBookingDateWindowPosition
     }
   ),
   lifecycle<{loadBookings: typeof actionsCreators.bookings.loadBookings}, any>({

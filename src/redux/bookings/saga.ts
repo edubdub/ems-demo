@@ -2,7 +2,6 @@ import { takeLatest, call, put } from 'redux-saga/effects'
 import { actions, actionCreators } from './actions'
 import * as bookingService from '../../services/bookings'
 export function * bookingSaga() {
-  console.log('sagas work')
   yield takeLatest(actions.LOAD_BOOKINGS, loadBookings)
 
 }
