@@ -15,6 +15,9 @@ import { Provider } from 'react-redux'
 import { store } from '../src/redux/store'
 import 'font-awesome/css/font-awesome.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import ScreenDimensions from './ScreenDimensions'
+
+addDecorator(story => <ScreenDimensions>{story()}</ScreenDimensions>)
 addDecorator(withKnobs)
 const MUIDecorator = (storyFn: Function) => (
   <MuiThemeProvider>{storyFn()}</MuiThemeProvider>

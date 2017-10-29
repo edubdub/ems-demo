@@ -22,6 +22,7 @@ const CenterDecorator = (storyFn: Function) => (
 require('./loading/loading.story')
 require('./navBar/navBar.story')
 require('./bookings/bookings.story')
+require('./addBooking/addBooking.story')
 
 addDecorator(CenterDecorator)
 // centered stories
