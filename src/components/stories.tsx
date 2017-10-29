@@ -17,8 +17,11 @@ const CenterDecorator = (storyFn: Function) => (
     </div>
   </div>
 )
-addDecorator(CenterDecorator)
 
+// Non centered stories
 require('./loading/loading.story')
 require('./navBar/navBar.story')
 require('./bookings/bookings.story')
+
+addDecorator(CenterDecorator)
+// centered stories

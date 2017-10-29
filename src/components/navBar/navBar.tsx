@@ -11,22 +11,16 @@ import TextField from 'material-ui/TextField'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
 export default class NavBar extends React.PureComponent<{
   height: number
-  heightRealized: (height?: number) => any
-  onDateChange: (date: Date) => any
   date: Date
-  searchTerm?: string
-  onSearchTermChange: (term: string) => any
+  searchTerm: string
   fuzzySearch: boolean
+  heightRealized: (height: number) => any
+  onDateChange: (date: Date) => any
+  onSearchTermChange: (term: string) => any
   onFuzzySearchChange: (value: boolean) => any
 }> {
   state = {
     searchMode: false
-  }
-  static get defaultProps() {
-    return {
-      height: 64,
-      searchTerm: ''
-    }
   }
   // blur and clicking x can happen at the same time
   switchToDateMode = () => this.setState({ searchMode: false })

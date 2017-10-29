@@ -1,4 +1,4 @@
-import { handleActions, Action } from 'redux-actions'
+import { handleActions, Action, combineActions} from 'redux-actions'
 import { actions } from './actions'
 import { Record, List } from 'immutable'
 const initialState = {
@@ -27,7 +27,7 @@ const reducer = handleActions({
     return state.set('bookingDatesToWindowPositions', state.bookingDatesToWindowPositions
       .filter(b => !!b && b.bookingDate.getTime() !== bookingDate.getTime()).concat({bookingDate: bookingDate, position }))
   },
-  [actions.SET_NAV_DATE]: (state: UIState, action: Action<Date>) => {
+  [combineActions(actions.USER_SET_NAV_DATE, actions.SET_NAV_DATE)]: (state: UIState, action: Action<Date>) => {
     return state.set('navDate', action.payload).set('shouldNavigateToDate', true)
   },
   [actions.SET_SHOULD_NAVIGATE]: (state: UIState, action: Action<boolean>) => {

@@ -3,6 +3,8 @@ import createSagaMiddleware from 'redux-saga'
 import bookingReducer, { BookingState } from './bookings/reducer'
 import uiReducer, { UIState } from './ui/reducer'
 import { bookingSaga } from './bookings/saga'
+import { globalEventsSaga } from './ui/saga'
+import { all } from 'redux-saga/effects'
 export interface IState {
   bookings: BookingState,
   ui: UIState
@@ -24,4 +26,9 @@ export const store = createStore(
   )
 
 )
-sagaMiddleware.run(bookingSaga)
+sagaMiddleware.run(function* rootSaga() {
+  yield all([
+    bookingSaga(),
+    globalEventsSaga()
+  ])
+})

@@ -11,7 +11,7 @@ const initialState = {
 export class BookingState extends Record(initialState) {
   loading: boolean
   bookings: List<Booking>
-  searchTerms: ''
+  searchTerms: string
   useFuzzySearch: boolean
 }
 const defaultState = new BookingState(initialState)
