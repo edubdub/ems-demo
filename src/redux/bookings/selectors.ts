@@ -1,12 +1,44 @@
-// import { createSelector } from 'reselect'
-import { IState } from '../store'
 import { createSelector } from 'reselect'
-import { List } from 'immutable'
+import { IState } from '../store'
 import { Booking } from '../../models/booking'
-const selectBookings = (state: IState) => state.bookings.bookings
+import * as Fuse from 'fuse.js'
+const fuseOptions = {
+  shouldSort: false,
+  threshold: 0.6,
+  location: 0,
+  distance: 100,
+  maxPatternLength: 32,
+  minMatchCharLength: 1,
+  keys: [
+    'eventName',
+    'roomName'
+  ]
+}
+
 const loading = (state: IState) => state.bookings.loading
-const bookingsByDate = createSelector(selectBookings, (bookings: List<Booking>) => {
-  return bookings.toArray().reduce((map, b) => {
+const useFuzzySearch = (state: IState) => state.bookings.useFuzzySearch
+const allBookings = (state: IState) => state.bookings.bookings
+const searchableBookings = createSelector(allBookings, useFuzzySearch, (bookings, fs) => {
+  if (fs) {
+    return new Fuse(bookings.toArray(), fuseOptions)
+  } else {
+    return {
+      search: (term: string) => bookings
+        .toArray()
+          .filter((b) => b &&
+            b.eventName.toLowerCase().match(term.toLowerCase()) ||
+            b.roomName.toLowerCase().match(term.toLowerCase()))
+    }
+  }
+})
+const currentSearchTerm = (state: IState) => state.bookings.searchTerms
+const selectBookings = createSelector(
+  searchableBookings,
+  currentSearchTerm,
+  allBookings,
+  (searchableBookings, searchTerm, bookings) => searchTerm ? searchableBookings.search(searchTerm) : bookings)
+const bookingsByDate = createSelector(selectBookings, (bookings: Array<Booking>) => {
+  return bookings.reduce((map, b) => {
     const bookingDate = new Date(b.start).toISOString()
     map[bookingDate] = map[bookingDate] || []
     map[bookingDate].push(b)
@@ -14,7 +46,10 @@ const bookingsByDate = createSelector(selectBookings, (bookings: List<Booking>) 
   }, {})
 })
 export default {
+  allBookings,
   selectBookings,
   loading,
-  bookingsByDate
+  bookingsByDate,
+  useFuzzySearch,
+  currentSearchTerm
 }

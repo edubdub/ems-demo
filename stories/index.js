@@ -633,4 +633,4 @@ const icons = [
   'fa-vimeo',
   'fa-black-tie',
   'fa-fonticons'
-]
+].sort()

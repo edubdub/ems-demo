@@ -8,5 +8,8 @@ storiesOf('components/navBar', module).add('default', () => (
     height={64}
     date={new Date()}
     onDateChange={action('onDateChange')}
+    onSearchTermChange={action('onSearchTermChange')}
+    fuzzySearch={true}
+    onFuzzySearchChange={action('onFuzzySearchChange')}
   />
 ))

@@ -11,10 +11,14 @@ export default compose(
     height: selectors.ui.navBarHeight(state),
     date: selectors.ui.navDate(state),
     shouldNavigateToDate: selectors.ui.shouldNavigateToDate(state),
-    positionOfSelectedDate: selectors.ui.positionOfSelectedDate(state)
+    positionOfSelectedDate: selectors.ui.positionOfSelectedDate(state),
+    searchTerm: selectors.bookings.currentSearchTerm(state),
+    fuzzySearch: selectors.bookings.useFuzzySearch(state)
   }), {
     heightRealized: actions.ui.setNavBarHeight,
-    onDateChange: actions.ui.setNavDate
+    onDateChange: actions.ui.setNavDate,
+    onSearchTermChange: actions.bookings.setSearchTerms,
+    onFuzzySearchChange: actions.bookings.setUseFuzzySearch
   }),
   lifecycle({
     componentWillReceiveProps (nextProps: {shouldNavigateToDate: boolean, positionOfSelectedDate: number, height: number}) {
