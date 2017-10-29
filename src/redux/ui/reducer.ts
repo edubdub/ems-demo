@@ -29,6 +29,9 @@ const reducer = handleActions({
   },
   [actions.SET_NAV_DATE]: (state: UIState, action: Action<Date>) => {
     return state.set('navDate', action.payload).set('shouldNavigateToDate', true)
+  },
+  [actions.SET_SHOULD_NAVIGATE]: (state: UIState, action: Action<boolean>) => {
+    return state.set('shouldNavigateToDate', action.payload)
   }
 } as any, defaultState)
 

@@ -18,14 +18,16 @@ export default compose(
     heightRealized: actions.ui.setNavBarHeight,
     onDateChange: actions.ui.setNavDate,
     onSearchTermChange: actions.bookings.setSearchTerms,
-    onFuzzySearchChange: actions.bookings.setUseFuzzySearch
+    onFuzzySearchChange: actions.bookings.setUseFuzzySearch,
+    setShouldNavigate: actions.ui.setShouldNavigate
   }),
   lifecycle({
-    componentWillReceiveProps (nextProps: {shouldNavigateToDate: boolean, positionOfSelectedDate: number, height: number}) {
+    componentWillReceiveProps (nextProps: {shouldNavigateToDate: boolean, positionOfSelectedDate: number, height: number, setShouldNavigate: (value: boolean) => any}) {
       if (nextProps.shouldNavigateToDate) {
         tween(window.scrollY, nextProps.positionOfSelectedDate - nextProps.height, 1000, (step) => {
           window.scrollTo(0, step)
         })
+        nextProps.setShouldNavigate(false)
       }
     }
   })

@@ -72,6 +72,7 @@ export default class NavBar extends React.PureComponent<{
                   </IconMenu>
                 ) : (
                   <DatePicker
+                    inputStyle={{ color: 'white' }}
                     value={this.props.date}
                     mode="landscape"
                     id="calendarNav"
