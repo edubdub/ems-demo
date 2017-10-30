@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loadBookings with loading false, step:  1`] = `
+Object {
+  "done": false,
+  "value": Object {
+    "@@redux-saga/IO": true,
+    "CALL": Object {
+      "args": Array [],
+      "context": null,
+      "fn": [Function],
+    },
+  },
+}
+`;
+
+exports[`loadBookings with loading false, step:  2`] = `
+Object {
+  "done": false,
+  "value": Object {
+    "@@redux-saga/IO": true,
+    "PUT": Object {
+      "action": Object {
+        "payload": Immutable.List [
+],
+        "type": "SET_BOOKINGS",
+      },
+      "channel": null,
+    },
+  },
+}
+`;
+
+exports[`loadBookings with loading false, step:  3`] = `
+Object {
+  "done": true,
+  "value": undefined,
+}
+`;
+
+exports[`loadBookings with loading true, step:  1`] = `
+Object {
+  "done": false,
+  "value": Object {
+    "@@redux-saga/IO": true,
+    "PUT": Object {
+      "action": Object {
+        "payload": true,
+        "type": "SET_BOOKING_LOADING",
+      },
+      "channel": null,
+    },
+  },
+}
+`;
+
+exports[`loadBookings with loading true, step:  2`] = `
+Object {
+  "done": false,
+  "value": Object {
+    "@@redux-saga/IO": true,
+    "CALL": Object {
+      "args": Array [],
+      "context": null,
+      "fn": [Function],
+    },
+  },
+}
+`;
+
+exports[`loadBookings with loading true, step:  3`] = `
+Object {
+  "done": false,
+  "value": Object {
+    "@@redux-saga/IO": true,
+    "PUT": Object {
+      "action": Object {
+        "payload": Immutable.List [
+],
+        "type": "SET_BOOKINGS",
+      },
+      "channel": null,
+    },
+  },
+}
+`;
+
+exports[`loadBookings with loading true, step:  4`] = `
+Object {
+  "done": false,
+  "value": Object {
+    "@@redux-saga/IO": true,
+    "PUT": Object {
+      "action": Object {
+        "payload": false,
+        "type": "SET_BOOKING_LOADING",
+      },
+      "channel": null,
+    },
+  },
+}
+`;
+
+exports[`loadBookings with loading true, step:  5`] = `
+Object {
+  "done": true,
+  "value": undefined,
+}
+`;

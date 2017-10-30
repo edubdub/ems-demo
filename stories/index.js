@@ -9,14 +9,14 @@ import {
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 import { withKnobs, select } from '@storybook/addon-knobs'
-import { Button, Welcome } from '@storybook/react/demo'
 import App from '../src/App'
 import { Provider } from 'react-redux'
-import { store } from '../src/redux/store'
+import { getStore } from '../src/redux/store'
 import 'font-awesome/css/font-awesome.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import ScreenDimensions from './ScreenDimensions'
-
+import { Paper } from 'material-ui'
+const store = getStore()
 addDecorator(story => <ScreenDimensions>{story()}</ScreenDimensions>)
 addDecorator(withKnobs)
 const MUIDecorator = (storyFn: Function) => (
@@ -29,7 +29,16 @@ const StoreDecorator = (storyFn: Function) => (
 addDecorator(StoreDecorator)
 
 storiesOf('Welcome', module).add('to Storybook', () => (
-  <Welcome showApp={linkTo('Button')} />
+  <div>
+    <h2>
+      Thanks for checking out my{' '}
+      <button onClick={linkTo('App')}>Demo App</button>!
+    </h2>
+    <p>
+      If your unfamiliar with storybooks,{' '}
+      <a href="https://storybook.js.org/">they are worth checking out!</a>
+    </p>
+  </div>
 ))
 
 storiesOf('App', module).add('App', () => <App />)

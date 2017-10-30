@@ -1,0 +1,1149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Bookings
+    bookingPositionRealized={[Function]}
+    bookingsByDay={
+        Object {
+            "2017-10-27T18:08:37Z": Array [
+              Object {
+                "end": "2017-06-13T07:00:00.000Z",
+                "eventName": "Test Booking 01",
+                "id": 0,
+                "roomName": "Demo Room 01",
+                "start": "2017-06-13T07:00:00.000Z",
+              },
+              Object {
+                "end": "2017-06-13T07:00:00.000Z",
+                "eventName": "Test Booking 02",
+                "id": 1,
+                "roomName": "Demo Room 02",
+                "start": "2017-06-13T07:00:00.000Z",
+              },
+              Object {
+                "end": "2017-06-13T07:00:00.000Z",
+                "eventName": "Test Booking 03",
+                "id": 2,
+                "roomName": "Demo Room 03",
+                "start": "2017-06-13T07:00:00.000Z",
+              },
+              Object {
+                "end": "2017-06-13T07:00:00.000Z",
+                "eventName": "Test Booking 04",
+                "id": 3,
+                "roomName": "Demo Room 04",
+                "start": "2017-06-13T07:00:00.000Z",
+              },
+              Object {
+                "end": "2017-06-13T07:00:00.000Z",
+                "eventName": "Test Booking 05",
+                "id": 4,
+                "roomName": "Demo Room 05",
+                "start": "2017-06-13T07:00:00.000Z",
+              },
+              Object {
+                "end": "2017-06-13T07:00:00.000Z",
+                "eventName": "Thanksgiving",
+                "id": 5,
+                "roomName": "Conference Room 1",
+                "start": "2017-06-13T07:00:00.000Z",
+              },
+            ],
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        style={
+                Object {
+                        "flex": 1,
+                        "flexDirection": "column",
+                      }
+        }
+>
+        <div
+                style={
+                        Object {
+                                "flex": 0,
+                              }
+                }
+        >
+                <Paper
+                        circle={false}
+                        rounded={true}
+                        style={
+                                Object {
+                                        "marginBottom": 5,
+                                        "marginTop": 5,
+                                      }
+                        }
+                        transitionEnabled={true}
+                        zDepth={1}
+                >
+                        <Paper
+                                circle={false}
+                                rounded={true}
+                                transitionEnabled={true}
+                                zDepth={1}
+                        >
+                                <span>
+                                        <Subheader
+                                                inset={false}
+                                        >
+                                                Today 
+                                                2017-6-13
+                                        </Subheader>
+                                </span>
+                        </Paper>
+                        <BookingsList
+                                bookings={
+                                        Array [
+                                                Object {
+                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                  "eventName": "Test Booking 01",
+                                                  "id": 0,
+                                                  "roomName": "Demo Room 01",
+                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                },
+                                                Object {
+                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                  "eventName": "Test Booking 02",
+                                                  "id": 1,
+                                                  "roomName": "Demo Room 02",
+                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                },
+                                                Object {
+                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                  "eventName": "Test Booking 03",
+                                                  "id": 2,
+                                                  "roomName": "Demo Room 03",
+                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                },
+                                                Object {
+                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                  "eventName": "Test Booking 04",
+                                                  "id": 3,
+                                                  "roomName": "Demo Room 04",
+                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                },
+                                                Object {
+                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                  "eventName": "Test Booking 05",
+                                                  "id": 4,
+                                                  "roomName": "Demo Room 05",
+                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                },
+                                                Object {
+                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                  "eventName": "Thanksgiving",
+                                                  "id": 5,
+                                                  "roomName": "Conference Room 1",
+                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                },
+                                              ]
+                                }
+                        />
+                </Paper>
+        </div>
+        <div
+                style={
+                        Object {
+                                "color": "white",
+                                "flex": 1,
+                                "height": "100%",
+                                "minHeight": 1000,
+                                "overflow": "hidden",
+                                "textAlign": "center",
+                                "width": "100%",
+                              }
+                }
+        />
+</div>,
+      "style": Object {
+        "display": "block",
+        "margin": "0 auto",
+        "maxWidth": 1024,
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            style={
+                        Object {
+                                    "flex": 0,
+                                  }
+            }
+>
+            <Paper
+                        circle={false}
+                        rounded={true}
+                        style={
+                                    Object {
+                                                "marginBottom": 5,
+                                                "marginTop": 5,
+                                              }
+                        }
+                        transitionEnabled={true}
+                        zDepth={1}
+            >
+                        <Paper
+                                    circle={false}
+                                    rounded={true}
+                                    transitionEnabled={true}
+                                    zDepth={1}
+                        >
+                                    <span>
+                                                <Subheader
+                                                            inset={false}
+                                                >
+                                                            Today 
+                                                            2017-6-13
+                                                </Subheader>
+                                    </span>
+                        </Paper>
+                        <BookingsList
+                                    bookings={
+                                                Array [
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 01",
+                                                              "id": 0,
+                                                              "roomName": "Demo Room 01",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 02",
+                                                              "id": 1,
+                                                              "roomName": "Demo Room 02",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 03",
+                                                              "id": 2,
+                                                              "roomName": "Demo Room 03",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 04",
+                                                              "id": 3,
+                                                              "roomName": "Demo Room 04",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 05",
+                                                              "id": 4,
+                                                              "roomName": "Demo Room 05",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Thanksgiving",
+                                                              "id": 5,
+                                                              "roomName": "Conference Room 1",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                          ]
+                                    }
+                        />
+            </Paper>
+</div>,
+          <div
+            style={
+                        Object {
+                                    "color": "white",
+                                    "flex": 1,
+                                    "height": "100%",
+                                    "minHeight": 1000,
+                                    "overflow": "hidden",
+                                    "textAlign": "center",
+                                    "width": "100%",
+                                  }
+            }
+/>,
+        ],
+        "style": Object {
+          "flex": 1,
+          "flexDirection": "column",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Paper
+                circle={false}
+                rounded={true}
+                style={
+                                Object {
+                                                "marginBottom": 5,
+                                                "marginTop": 5,
+                                              }
+                }
+                transitionEnabled={true}
+                zDepth={1}
+>
+                <Paper
+                                circle={false}
+                                rounded={true}
+                                transitionEnabled={true}
+                                zDepth={1}
+                >
+                                <span>
+                                                <Subheader
+                                                                inset={false}
+                                                >
+                                                                Today 
+                                                                2017-6-13
+                                                </Subheader>
+                                </span>
+                </Paper>
+                <BookingsList
+                                bookings={
+                                                Array [
+                                                                Object {
+                                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                                  "eventName": "Test Booking 01",
+                                                                  "id": 0,
+                                                                  "roomName": "Demo Room 01",
+                                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                                },
+                                                                Object {
+                                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                                  "eventName": "Test Booking 02",
+                                                                  "id": 1,
+                                                                  "roomName": "Demo Room 02",
+                                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                                },
+                                                                Object {
+                                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                                  "eventName": "Test Booking 03",
+                                                                  "id": 2,
+                                                                  "roomName": "Demo Room 03",
+                                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                                },
+                                                                Object {
+                                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                                  "eventName": "Test Booking 04",
+                                                                  "id": 3,
+                                                                  "roomName": "Demo Room 04",
+                                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                                },
+                                                                Object {
+                                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                                  "eventName": "Test Booking 05",
+                                                                  "id": 4,
+                                                                  "roomName": "Demo Room 05",
+                                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                                },
+                                                                Object {
+                                                                  "end": "2017-06-13T07:00:00.000Z",
+                                                                  "eventName": "Thanksgiving",
+                                                                  "id": 5,
+                                                                  "roomName": "Conference Room 1",
+                                                                  "start": "2017-06-13T07:00:00.000Z",
+                                                                },
+                                                              ]
+                                }
+                />
+</Paper>,
+            ],
+            "style": Object {
+              "flex": 0,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "2017-10-27T18:08:37Z-subHeader",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Paper
+                    circle={false}
+                    rounded={true}
+                    transitionEnabled={true}
+                    zDepth={1}
+>
+                    <span>
+                                        <Subheader
+                                                            inset={false}
+                                        >
+                                                            Today 
+                                                            2017-6-13
+                                        </Subheader>
+                    </span>
+</Paper>,
+                  <BookingsList
+                    bookings={
+                                        Array [
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 01",
+                                                              "id": 0,
+                                                              "roomName": "Demo Room 01",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 02",
+                                                              "id": 1,
+                                                              "roomName": "Demo Room 02",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 03",
+                                                              "id": 2,
+                                                              "roomName": "Demo Room 03",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 04",
+                                                              "id": 3,
+                                                              "roomName": "Demo Room 04",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 05",
+                                                              "id": 4,
+                                                              "roomName": "Demo Room 05",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Thanksgiving",
+                                                              "id": 5,
+                                                              "roomName": "Conference Room 1",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                          ]
+                    }
+/>,
+                ],
+                "circle": false,
+                "rounded": true,
+                "style": Object {
+                  "marginBottom": 5,
+                  "marginTop": 5,
+                },
+                "transitionEnabled": true,
+                "zDepth": 1,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <span>
+                      <Subheader
+                                            inset={false}
+                      >
+                                            Today 
+                                            2017-6-13
+                      </Subheader>
+</span>,
+                    "circle": false,
+                    "rounded": true,
+                    "transitionEnabled": true,
+                    "zDepth": 1,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": null,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <Subheader
+                        inset={false}
+>
+                        Today 
+                        2017-6-13
+</Subheader>,
+                    },
+                    "ref": [Function],
+                    "rendered": Object {
+                      "instance": null,
+                      "key": null,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": Array [
+                          "Today ",
+                          "2017-6-13",
+                        ],
+                        "inset": false,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Today ",
+                        "2017-6-13",
+                      ],
+                      "type": [Function],
+                    },
+                    "type": "span",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bookings": Array [
+                      Object {
+                        "end": "2017-06-13T07:00:00.000Z",
+                        "eventName": "Test Booking 01",
+                        "id": 0,
+                        "roomName": "Demo Room 01",
+                        "start": "2017-06-13T07:00:00.000Z",
+                      },
+                      Object {
+                        "end": "2017-06-13T07:00:00.000Z",
+                        "eventName": "Test Booking 02",
+                        "id": 1,
+                        "roomName": "Demo Room 02",
+                        "start": "2017-06-13T07:00:00.000Z",
+                      },
+                      Object {
+                        "end": "2017-06-13T07:00:00.000Z",
+                        "eventName": "Test Booking 03",
+                        "id": 2,
+                        "roomName": "Demo Room 03",
+                        "start": "2017-06-13T07:00:00.000Z",
+                      },
+                      Object {
+                        "end": "2017-06-13T07:00:00.000Z",
+                        "eventName": "Test Booking 04",
+                        "id": 3,
+                        "roomName": "Demo Room 04",
+                        "start": "2017-06-13T07:00:00.000Z",
+                      },
+                      Object {
+                        "end": "2017-06-13T07:00:00.000Z",
+                        "eventName": "Test Booking 05",
+                        "id": 4,
+                        "roomName": "Demo Room 05",
+                        "start": "2017-06-13T07:00:00.000Z",
+                      },
+                      Object {
+                        "end": "2017-06-13T07:00:00.000Z",
+                        "eventName": "Thanksgiving",
+                        "id": 5,
+                        "roomName": "Conference Room 1",
+                        "start": "2017-06-13T07:00:00.000Z",
+                      },
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "style": Object {
+              "color": "white",
+              "flex": 1,
+              "height": "100%",
+              "minHeight": 1000,
+              "overflow": "hidden",
+              "textAlign": "center",
+              "width": "100%",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          style={
+                    Object {
+                              "flex": 1,
+                              "flexDirection": "column",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "flex": 0,
+                                      }
+                    }
+          >
+                    <Paper
+                              circle={false}
+                              rounded={true}
+                              style={
+                                        Object {
+                                                  "marginBottom": 5,
+                                                  "marginTop": 5,
+                                                }
+                              }
+                              transitionEnabled={true}
+                              zDepth={1}
+                    >
+                              <Paper
+                                        circle={false}
+                                        rounded={true}
+                                        transitionEnabled={true}
+                                        zDepth={1}
+                              >
+                                        <span>
+                                                  <Subheader
+                                                            inset={false}
+                                                  >
+                                                            Today 
+                                                            2017-6-13
+                                                  </Subheader>
+                                        </span>
+                              </Paper>
+                              <BookingsList
+                                        bookings={
+                                                  Array [
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 01",
+                                                              "id": 0,
+                                                              "roomName": "Demo Room 01",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 02",
+                                                              "id": 1,
+                                                              "roomName": "Demo Room 02",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 03",
+                                                              "id": 2,
+                                                              "roomName": "Demo Room 03",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 04",
+                                                              "id": 3,
+                                                              "roomName": "Demo Room 04",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Test Booking 05",
+                                                              "id": 4,
+                                                              "roomName": "Demo Room 05",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                            Object {
+                                                              "end": "2017-06-13T07:00:00.000Z",
+                                                              "eventName": "Thanksgiving",
+                                                              "id": 5,
+                                                              "roomName": "Conference Room 1",
+                                                              "start": "2017-06-13T07:00:00.000Z",
+                                                            },
+                                                          ]
+                                        }
+                              />
+                    </Paper>
+          </div>
+          <div
+                    style={
+                              Object {
+                                        "color": "white",
+                                        "flex": 1,
+                                        "height": "100%",
+                                        "minHeight": 1000,
+                                        "overflow": "hidden",
+                                        "textAlign": "center",
+                                        "width": "100%",
+                                      }
+                    }
+          />
+</div>,
+        "style": Object {
+          "display": "block",
+          "margin": "0 auto",
+          "maxWidth": 1024,
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              style={
+                            Object {
+                                          "flex": 0,
+                                        }
+              }
+>
+              <Paper
+                            circle={false}
+                            rounded={true}
+                            style={
+                                          Object {
+                                                        "marginBottom": 5,
+                                                        "marginTop": 5,
+                                                      }
+                            }
+                            transitionEnabled={true}
+                            zDepth={1}
+              >
+                            <Paper
+                                          circle={false}
+                                          rounded={true}
+                                          transitionEnabled={true}
+                                          zDepth={1}
+                            >
+                                          <span>
+                                                        <Subheader
+                                                                      inset={false}
+                                                        >
+                                                                      Today 
+                                                                      2017-6-13
+                                                        </Subheader>
+                                          </span>
+                            </Paper>
+                            <BookingsList
+                                          bookings={
+                                                        Array [
+                                                                      Object {
+                                                                        "end": "2017-06-13T07:00:00.000Z",
+                                                                        "eventName": "Test Booking 01",
+                                                                        "id": 0,
+                                                                        "roomName": "Demo Room 01",
+                                                                        "start": "2017-06-13T07:00:00.000Z",
+                                                                      },
+                                                                      Object {
+                                                                        "end": "2017-06-13T07:00:00.000Z",
+                                                                        "eventName": "Test Booking 02",
+                                                                        "id": 1,
+                                                                        "roomName": "Demo Room 02",
+                                                                        "start": "2017-06-13T07:00:00.000Z",
+                                                                      },
+                                                                      Object {
+                                                                        "end": "2017-06-13T07:00:00.000Z",
+                                                                        "eventName": "Test Booking 03",
+                                                                        "id": 2,
+                                                                        "roomName": "Demo Room 03",
+                                                                        "start": "2017-06-13T07:00:00.000Z",
+                                                                      },
+                                                                      Object {
+                                                                        "end": "2017-06-13T07:00:00.000Z",
+                                                                        "eventName": "Test Booking 04",
+                                                                        "id": 3,
+                                                                        "roomName": "Demo Room 04",
+                                                                        "start": "2017-06-13T07:00:00.000Z",
+                                                                      },
+                                                                      Object {
+                                                                        "end": "2017-06-13T07:00:00.000Z",
+                                                                        "eventName": "Test Booking 05",
+                                                                        "id": 4,
+                                                                        "roomName": "Demo Room 05",
+                                                                        "start": "2017-06-13T07:00:00.000Z",
+                                                                      },
+                                                                      Object {
+                                                                        "end": "2017-06-13T07:00:00.000Z",
+                                                                        "eventName": "Thanksgiving",
+                                                                        "id": 5,
+                                                                        "roomName": "Conference Room 1",
+                                                                        "start": "2017-06-13T07:00:00.000Z",
+                                                                      },
+                                                                    ]
+                                          }
+                            />
+              </Paper>
+</div>,
+            <div
+              style={
+                            Object {
+                                          "color": "white",
+                                          "flex": 1,
+                                          "height": "100%",
+                                          "minHeight": 1000,
+                                          "overflow": "hidden",
+                                          "textAlign": "center",
+                                          "width": "100%",
+                                        }
+              }
+/>,
+          ],
+          "style": Object {
+            "flex": 1,
+            "flexDirection": "column",
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Paper
+                  circle={false}
+                  rounded={true}
+                  style={
+                                    Object {
+                                                      "marginBottom": 5,
+                                                      "marginTop": 5,
+                                                    }
+                  }
+                  transitionEnabled={true}
+                  zDepth={1}
+>
+                  <Paper
+                                    circle={false}
+                                    rounded={true}
+                                    transitionEnabled={true}
+                                    zDepth={1}
+                  >
+                                    <span>
+                                                      <Subheader
+                                                                        inset={false}
+                                                      >
+                                                                        Today 
+                                                                        2017-6-13
+                                                      </Subheader>
+                                    </span>
+                  </Paper>
+                  <BookingsList
+                                    bookings={
+                                                      Array [
+                                                                        Object {
+                                                                          "end": "2017-06-13T07:00:00.000Z",
+                                                                          "eventName": "Test Booking 01",
+                                                                          "id": 0,
+                                                                          "roomName": "Demo Room 01",
+                                                                          "start": "2017-06-13T07:00:00.000Z",
+                                                                        },
+                                                                        Object {
+                                                                          "end": "2017-06-13T07:00:00.000Z",
+                                                                          "eventName": "Test Booking 02",
+                                                                          "id": 1,
+                                                                          "roomName": "Demo Room 02",
+                                                                          "start": "2017-06-13T07:00:00.000Z",
+                                                                        },
+                                                                        Object {
+                                                                          "end": "2017-06-13T07:00:00.000Z",
+                                                                          "eventName": "Test Booking 03",
+                                                                          "id": 2,
+                                                                          "roomName": "Demo Room 03",
+                                                                          "start": "2017-06-13T07:00:00.000Z",
+                                                                        },
+                                                                        Object {
+                                                                          "end": "2017-06-13T07:00:00.000Z",
+                                                                          "eventName": "Test Booking 04",
+                                                                          "id": 3,
+                                                                          "roomName": "Demo Room 04",
+                                                                          "start": "2017-06-13T07:00:00.000Z",
+                                                                        },
+                                                                        Object {
+                                                                          "end": "2017-06-13T07:00:00.000Z",
+                                                                          "eventName": "Test Booking 05",
+                                                                          "id": 4,
+                                                                          "roomName": "Demo Room 05",
+                                                                          "start": "2017-06-13T07:00:00.000Z",
+                                                                        },
+                                                                        Object {
+                                                                          "end": "2017-06-13T07:00:00.000Z",
+                                                                          "eventName": "Thanksgiving",
+                                                                          "id": 5,
+                                                                          "roomName": "Conference Room 1",
+                                                                          "start": "2017-06-13T07:00:00.000Z",
+                                                                        },
+                                                                      ]
+                                    }
+                  />
+</Paper>,
+              ],
+              "style": Object {
+                "flex": 0,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "2017-10-27T18:08:37Z-subHeader",
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Paper
+                      circle={false}
+                      rounded={true}
+                      transitionEnabled={true}
+                      zDepth={1}
+>
+                      <span>
+                                            <Subheader
+                                                                  inset={false}
+                                            >
+                                                                  Today 
+                                                                  2017-6-13
+                                            </Subheader>
+                      </span>
+</Paper>,
+                    <BookingsList
+                      bookings={
+                                            Array [
+                                                                  Object {
+                                                                    "end": "2017-06-13T07:00:00.000Z",
+                                                                    "eventName": "Test Booking 01",
+                                                                    "id": 0,
+                                                                    "roomName": "Demo Room 01",
+                                                                    "start": "2017-06-13T07:00:00.000Z",
+                                                                  },
+                                                                  Object {
+                                                                    "end": "2017-06-13T07:00:00.000Z",
+                                                                    "eventName": "Test Booking 02",
+                                                                    "id": 1,
+                                                                    "roomName": "Demo Room 02",
+                                                                    "start": "2017-06-13T07:00:00.000Z",
+                                                                  },
+                                                                  Object {
+                                                                    "end": "2017-06-13T07:00:00.000Z",
+                                                                    "eventName": "Test Booking 03",
+                                                                    "id": 2,
+                                                                    "roomName": "Demo Room 03",
+                                                                    "start": "2017-06-13T07:00:00.000Z",
+                                                                  },
+                                                                  Object {
+                                                                    "end": "2017-06-13T07:00:00.000Z",
+                                                                    "eventName": "Test Booking 04",
+                                                                    "id": 3,
+                                                                    "roomName": "Demo Room 04",
+                                                                    "start": "2017-06-13T07:00:00.000Z",
+                                                                  },
+                                                                  Object {
+                                                                    "end": "2017-06-13T07:00:00.000Z",
+                                                                    "eventName": "Test Booking 05",
+                                                                    "id": 4,
+                                                                    "roomName": "Demo Room 05",
+                                                                    "start": "2017-06-13T07:00:00.000Z",
+                                                                  },
+                                                                  Object {
+                                                                    "end": "2017-06-13T07:00:00.000Z",
+                                                                    "eventName": "Thanksgiving",
+                                                                    "id": 5,
+                                                                    "roomName": "Conference Room 1",
+                                                                    "start": "2017-06-13T07:00:00.000Z",
+                                                                  },
+                                                                ]
+                      }
+/>,
+                  ],
+                  "circle": false,
+                  "rounded": true,
+                  "style": Object {
+                    "marginBottom": 5,
+                    "marginTop": 5,
+                  },
+                  "transitionEnabled": true,
+                  "zDepth": 1,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": null,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <span>
+                        <Subheader
+                                                inset={false}
+                        >
+                                                Today 
+                                                2017-6-13
+                        </Subheader>
+</span>,
+                      "circle": false,
+                      "rounded": true,
+                      "transitionEnabled": true,
+                      "zDepth": 1,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": null,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Subheader
+                          inset={false}
+>
+                          Today 
+                          2017-6-13
+</Subheader>,
+                      },
+                      "ref": [Function],
+                      "rendered": Object {
+                        "instance": null,
+                        "key": null,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            "Today ",
+                            "2017-6-13",
+                          ],
+                          "inset": false,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Today ",
+                          "2017-6-13",
+                        ],
+                        "type": [Function],
+                      },
+                      "type": "span",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": null,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bookings": Array [
+                        Object {
+                          "end": "2017-06-13T07:00:00.000Z",
+                          "eventName": "Test Booking 01",
+                          "id": 0,
+                          "roomName": "Demo Room 01",
+                          "start": "2017-06-13T07:00:00.000Z",
+                        },
+                        Object {
+                          "end": "2017-06-13T07:00:00.000Z",
+                          "eventName": "Test Booking 02",
+                          "id": 1,
+                          "roomName": "Demo Room 02",
+                          "start": "2017-06-13T07:00:00.000Z",
+                        },
+                        Object {
+                          "end": "2017-06-13T07:00:00.000Z",
+                          "eventName": "Test Booking 03",
+                          "id": 2,
+                          "roomName": "Demo Room 03",
+                          "start": "2017-06-13T07:00:00.000Z",
+                        },
+                        Object {
+                          "end": "2017-06-13T07:00:00.000Z",
+                          "eventName": "Test Booking 04",
+                          "id": 3,
+                          "roomName": "Demo Room 04",
+                          "start": "2017-06-13T07:00:00.000Z",
+                        },
+                        Object {
+                          "end": "2017-06-13T07:00:00.000Z",
+                          "eventName": "Test Booking 05",
+                          "id": 4,
+                          "roomName": "Demo Room 05",
+                          "start": "2017-06-13T07:00:00.000Z",
+                        },
+                        Object {
+                          "end": "2017-06-13T07:00:00.000Z",
+                          "eventName": "Thanksgiving",
+                          "id": 5,
+                          "roomName": "Conference Room 1",
+                          "start": "2017-06-13T07:00:00.000Z",
+                        },
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "style": Object {
+                "color": "white",
+                "flex": 1,
+                "height": "100%",
+                "minHeight": 1000,
+                "overflow": "hidden",
+                "textAlign": "center",
+                "width": "100%",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

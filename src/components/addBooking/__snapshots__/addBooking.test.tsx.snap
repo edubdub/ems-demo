@@ -1,0 +1,1323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Loading
+    onRequestClose={[Function]}
+    onSubmit={[Function]}
+    open={true}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "class",
+    "props": Object {
+      "actions": Array [
+        <FlatButton
+          disabled={false}
+          fullWidth={false}
+          label="Cancel"
+          labelPosition="after"
+          labelStyle={Object {}}
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          onKeyboardFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onTouchStart={[Function]}
+          primary={true}
+          secondary={false}
+/>,
+        <FlatButton
+          disabled={false}
+          fullWidth={false}
+          keyboardFocused={true}
+          label="Submit"
+          labelPosition="after"
+          labelStyle={Object {}}
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          onKeyboardFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onTouchStart={[Function]}
+          primary={true}
+          secondary={false}
+/>,
+      ],
+      "autoDetectWindowHeight": true,
+      "autoScrollBodyContent": false,
+      "children": <form
+        onSubmit={[Function]}
+>
+        <h2
+                style={
+                        Object {
+                                "textAlign": "center",
+                              }
+                }
+        >
+                Add Event
+        </h2>
+        <div
+                style={
+                        Object {
+                                "display": "flex",
+                                "flex": 1,
+                                "flexDirection": "row",
+                                "justifyContent": "space-around",
+                                "marginBottom": 10,
+                                "marginTop": 10,
+                              }
+                }
+        >
+                <TextField
+                        disabled={false}
+                        errorText={false}
+                        floatingLabelFixed={false}
+                        floatingLabelText="Event Name"
+                        fullWidth={false}
+                        id="eventName"
+                        multiLine={false}
+                        onChange={[Function]}
+                        rows={1}
+                        type="text"
+                        underlineShow={true}
+                        value=""
+                />
+                <TextField
+                        disabled={false}
+                        errorText={false}
+                        floatingLabelFixed={false}
+                        floatingLabelText="Event Room"
+                        fullWidth={false}
+                        id="roomName"
+                        multiLine={false}
+                        onChange={[Function]}
+                        rows={1}
+                        type="text"
+                        underlineShow={true}
+                        value=""
+                />
+        </div>
+        <div
+                style={
+                        Object {
+                                "display": "flex",
+                                "flex": 1,
+                                "flexDirection": "row",
+                                "justifyContent": "space-around",
+                                "marginBottom": 10,
+                                "marginTop": 10,
+                              }
+                }
+        >
+                <DatePicker
+                        autoOk={false}
+                        container="dialog"
+                        disableYearSelection={false}
+                        disabled={false}
+                        errorText={false}
+                        firstDayOfWeek={1}
+                        hideCalendarDate={false}
+                        hintText="Start Date"
+                        id="startDate"
+                        onChange={[Function]}
+                        openToYearSelection={false}
+                        style={Object {}}
+                        value={2017-06-13T07:00:00.000Z}
+                />
+                <TimePicker
+                        autoOk={false}
+                        cancelLabel="Cancel"
+                        defaultTime={null}
+                        disabled={false}
+                        errorText={false}
+                        format="ampm"
+                        hintText="Start Time"
+                        id="startTime"
+                        minutesStep={1}
+                        okLabel="OK"
+                        onChange={[Function]}
+                        pedantic={false}
+                        style={Object {}}
+                        value={2017-06-13T07:00:00.000Z}
+                />
+        </div>
+        <div
+                style={
+                        Object {
+                                "display": "flex",
+                                "flex": 1,
+                                "flexDirection": "row",
+                                "justifyContent": "space-around",
+                                "marginBottom": 10,
+                                "marginTop": 10,
+                              }
+                }
+        >
+                <DatePicker
+                        autoOk={false}
+                        container="dialog"
+                        disableYearSelection={false}
+                        disabled={false}
+                        errorText={false}
+                        firstDayOfWeek={1}
+                        hideCalendarDate={false}
+                        hintText="End Date"
+                        id="endDate"
+                        onChange={[Function]}
+                        openToYearSelection={false}
+                        style={Object {}}
+                        value={2017-06-13T07:00:00.000Z}
+                />
+                <TimePicker
+                        autoOk={false}
+                        cancelLabel="Cancel"
+                        defaultTime={null}
+                        disabled={false}
+                        errorText={false}
+                        format="ampm"
+                        hintText="End Time"
+                        id="endTime"
+                        minutesStep={1}
+                        okLabel="OK"
+                        onChange={[Function]}
+                        pedantic={false}
+                        style={Object {}}
+                        value={2017-06-13T07:00:00.000Z}
+                />
+        </div>
+</form>,
+      "modal": false,
+      "onRequestClose": [Function],
+      "open": true,
+      "repositionOnUpdate": true,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            style={
+                        Object {
+                                    "textAlign": "center",
+                                  }
+            }
+>
+            Add Event
+</h2>,
+          <div
+            style={
+                        Object {
+                                    "display": "flex",
+                                    "flex": 1,
+                                    "flexDirection": "row",
+                                    "justifyContent": "space-around",
+                                    "marginBottom": 10,
+                                    "marginTop": 10,
+                                  }
+            }
+>
+            <TextField
+                        disabled={false}
+                        errorText={false}
+                        floatingLabelFixed={false}
+                        floatingLabelText="Event Name"
+                        fullWidth={false}
+                        id="eventName"
+                        multiLine={false}
+                        onChange={[Function]}
+                        rows={1}
+                        type="text"
+                        underlineShow={true}
+                        value=""
+            />
+            <TextField
+                        disabled={false}
+                        errorText={false}
+                        floatingLabelFixed={false}
+                        floatingLabelText="Event Room"
+                        fullWidth={false}
+                        id="roomName"
+                        multiLine={false}
+                        onChange={[Function]}
+                        rows={1}
+                        type="text"
+                        underlineShow={true}
+                        value=""
+            />
+</div>,
+          <div
+            style={
+                        Object {
+                                    "display": "flex",
+                                    "flex": 1,
+                                    "flexDirection": "row",
+                                    "justifyContent": "space-around",
+                                    "marginBottom": 10,
+                                    "marginTop": 10,
+                                  }
+            }
+>
+            <DatePicker
+                        autoOk={false}
+                        container="dialog"
+                        disableYearSelection={false}
+                        disabled={false}
+                        errorText={false}
+                        firstDayOfWeek={1}
+                        hideCalendarDate={false}
+                        hintText="Start Date"
+                        id="startDate"
+                        onChange={[Function]}
+                        openToYearSelection={false}
+                        style={Object {}}
+                        value={2017-06-13T07:00:00.000Z}
+            />
+            <TimePicker
+                        autoOk={false}
+                        cancelLabel="Cancel"
+                        defaultTime={null}
+                        disabled={false}
+                        errorText={false}
+                        format="ampm"
+                        hintText="Start Time"
+                        id="startTime"
+                        minutesStep={1}
+                        okLabel="OK"
+                        onChange={[Function]}
+                        pedantic={false}
+                        style={Object {}}
+                        value={2017-06-13T07:00:00.000Z}
+            />
+</div>,
+          <div
+            style={
+                        Object {
+                                    "display": "flex",
+                                    "flex": 1,
+                                    "flexDirection": "row",
+                                    "justifyContent": "space-around",
+                                    "marginBottom": 10,
+                                    "marginTop": 10,
+                                  }
+            }
+>
+            <DatePicker
+                        autoOk={false}
+                        container="dialog"
+                        disableYearSelection={false}
+                        disabled={false}
+                        errorText={false}
+                        firstDayOfWeek={1}
+                        hideCalendarDate={false}
+                        hintText="End Date"
+                        id="endDate"
+                        onChange={[Function]}
+                        openToYearSelection={false}
+                        style={Object {}}
+                        value={2017-06-13T07:00:00.000Z}
+            />
+            <TimePicker
+                        autoOk={false}
+                        cancelLabel="Cancel"
+                        defaultTime={null}
+                        disabled={false}
+                        errorText={false}
+                        format="ampm"
+                        hintText="End Time"
+                        id="endTime"
+                        minutesStep={1}
+                        okLabel="OK"
+                        onChange={[Function]}
+                        pedantic={false}
+                        style={Object {}}
+                        value={2017-06-13T07:00:00.000Z}
+            />
+</div>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Event",
+            "style": Object {
+              "textAlign": "center",
+            },
+          },
+          "ref": null,
+          "rendered": "Add Event",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <TextField
+                disabled={false}
+                errorText={false}
+                floatingLabelFixed={false}
+                floatingLabelText="Event Name"
+                fullWidth={false}
+                id="eventName"
+                multiLine={false}
+                onChange={[Function]}
+                rows={1}
+                type="text"
+                underlineShow={true}
+                value=""
+/>,
+              <TextField
+                disabled={false}
+                errorText={false}
+                floatingLabelFixed={false}
+                floatingLabelText="Event Room"
+                fullWidth={false}
+                id="roomName"
+                multiLine={false}
+                onChange={[Function]}
+                rows={1}
+                type="text"
+                underlineShow={true}
+                value=""
+/>,
+            ],
+            "style": Object {
+              "display": "flex",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 10,
+              "marginTop": 10,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "disabled": false,
+                "errorText": false,
+                "floatingLabelFixed": false,
+                "floatingLabelText": "Event Name",
+                "fullWidth": false,
+                "id": "eventName",
+                "multiLine": false,
+                "onChange": [Function],
+                "rows": 1,
+                "type": "text",
+                "underlineShow": true,
+                "value": "",
+              },
+              "ref": [Function],
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "disabled": false,
+                "errorText": false,
+                "floatingLabelFixed": false,
+                "floatingLabelText": "Event Room",
+                "fullWidth": false,
+                "id": "roomName",
+                "multiLine": false,
+                "onChange": [Function],
+                "rows": 1,
+                "type": "text",
+                "underlineShow": true,
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <DatePicker
+                autoOk={false}
+                container="dialog"
+                disableYearSelection={false}
+                disabled={false}
+                errorText={false}
+                firstDayOfWeek={1}
+                hideCalendarDate={false}
+                hintText="Start Date"
+                id="startDate"
+                onChange={[Function]}
+                openToYearSelection={false}
+                style={Object {}}
+                value={2017-06-13T07:00:00.000Z}
+/>,
+              <TimePicker
+                autoOk={false}
+                cancelLabel="Cancel"
+                defaultTime={null}
+                disabled={false}
+                errorText={false}
+                format="ampm"
+                hintText="Start Time"
+                id="startTime"
+                minutesStep={1}
+                okLabel="OK"
+                onChange={[Function]}
+                pedantic={false}
+                style={Object {}}
+                value={2017-06-13T07:00:00.000Z}
+/>,
+            ],
+            "style": Object {
+              "display": "flex",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 10,
+              "marginTop": 10,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "autoOk": false,
+                "container": "dialog",
+                "disableYearSelection": false,
+                "disabled": false,
+                "errorText": false,
+                "firstDayOfWeek": 1,
+                "hideCalendarDate": false,
+                "hintText": "Start Date",
+                "id": "startDate",
+                "onChange": [Function],
+                "openToYearSelection": false,
+                "style": Object {},
+                "value": 2017-06-13T07:00:00.000Z,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "autoOk": false,
+                "cancelLabel": "Cancel",
+                "defaultTime": null,
+                "disabled": false,
+                "errorText": false,
+                "format": "ampm",
+                "hintText": "Start Time",
+                "id": "startTime",
+                "minutesStep": 1,
+                "okLabel": "OK",
+                "onChange": [Function],
+                "pedantic": false,
+                "style": Object {},
+                "value": 2017-06-13T07:00:00.000Z,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <DatePicker
+                autoOk={false}
+                container="dialog"
+                disableYearSelection={false}
+                disabled={false}
+                errorText={false}
+                firstDayOfWeek={1}
+                hideCalendarDate={false}
+                hintText="End Date"
+                id="endDate"
+                onChange={[Function]}
+                openToYearSelection={false}
+                style={Object {}}
+                value={2017-06-13T07:00:00.000Z}
+/>,
+              <TimePicker
+                autoOk={false}
+                cancelLabel="Cancel"
+                defaultTime={null}
+                disabled={false}
+                errorText={false}
+                format="ampm"
+                hintText="End Time"
+                id="endTime"
+                minutesStep={1}
+                okLabel="OK"
+                onChange={[Function]}
+                pedantic={false}
+                style={Object {}}
+                value={2017-06-13T07:00:00.000Z}
+/>,
+            ],
+            "style": Object {
+              "display": "flex",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 10,
+              "marginTop": 10,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "autoOk": false,
+                "container": "dialog",
+                "disableYearSelection": false,
+                "disabled": false,
+                "errorText": false,
+                "firstDayOfWeek": 1,
+                "hideCalendarDate": false,
+                "hintText": "End Date",
+                "id": "endDate",
+                "onChange": [Function],
+                "openToYearSelection": false,
+                "style": Object {},
+                "value": 2017-06-13T07:00:00.000Z,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "autoOk": false,
+                "cancelLabel": "Cancel",
+                "defaultTime": null,
+                "disabled": false,
+                "errorText": false,
+                "format": "ampm",
+                "hintText": "End Time",
+                "id": "endTime",
+                "minutesStep": 1,
+                "okLabel": "OK",
+                "onChange": [Function],
+                "pedantic": false,
+                "style": Object {},
+                "value": 2017-06-13T07:00:00.000Z,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "class",
+      "props": Object {
+        "actions": Array [
+          <FlatButton
+            disabled={false}
+            fullWidth={false}
+            label="Cancel"
+            labelPosition="after"
+            labelStyle={Object {}}
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            onKeyboardFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchStart={[Function]}
+            primary={true}
+            secondary={false}
+/>,
+          <FlatButton
+            disabled={false}
+            fullWidth={false}
+            keyboardFocused={true}
+            label="Submit"
+            labelPosition="after"
+            labelStyle={Object {}}
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            onKeyboardFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchStart={[Function]}
+            primary={true}
+            secondary={false}
+/>,
+        ],
+        "autoDetectWindowHeight": true,
+        "autoScrollBodyContent": false,
+        "children": <form
+          onSubmit={[Function]}
+>
+          <h2
+                    style={
+                              Object {
+                                        "textAlign": "center",
+                                      }
+                    }
+          >
+                    Add Event
+          </h2>
+          <div
+                    style={
+                              Object {
+                                        "display": "flex",
+                                        "flex": 1,
+                                        "flexDirection": "row",
+                                        "justifyContent": "space-around",
+                                        "marginBottom": 10,
+                                        "marginTop": 10,
+                                      }
+                    }
+          >
+                    <TextField
+                              disabled={false}
+                              errorText={false}
+                              floatingLabelFixed={false}
+                              floatingLabelText="Event Name"
+                              fullWidth={false}
+                              id="eventName"
+                              multiLine={false}
+                              onChange={[Function]}
+                              rows={1}
+                              type="text"
+                              underlineShow={true}
+                              value=""
+                    />
+                    <TextField
+                              disabled={false}
+                              errorText={false}
+                              floatingLabelFixed={false}
+                              floatingLabelText="Event Room"
+                              fullWidth={false}
+                              id="roomName"
+                              multiLine={false}
+                              onChange={[Function]}
+                              rows={1}
+                              type="text"
+                              underlineShow={true}
+                              value=""
+                    />
+          </div>
+          <div
+                    style={
+                              Object {
+                                        "display": "flex",
+                                        "flex": 1,
+                                        "flexDirection": "row",
+                                        "justifyContent": "space-around",
+                                        "marginBottom": 10,
+                                        "marginTop": 10,
+                                      }
+                    }
+          >
+                    <DatePicker
+                              autoOk={false}
+                              container="dialog"
+                              disableYearSelection={false}
+                              disabled={false}
+                              errorText={false}
+                              firstDayOfWeek={1}
+                              hideCalendarDate={false}
+                              hintText="Start Date"
+                              id="startDate"
+                              onChange={[Function]}
+                              openToYearSelection={false}
+                              style={Object {}}
+                              value={2017-06-13T07:00:00.000Z}
+                    />
+                    <TimePicker
+                              autoOk={false}
+                              cancelLabel="Cancel"
+                              defaultTime={null}
+                              disabled={false}
+                              errorText={false}
+                              format="ampm"
+                              hintText="Start Time"
+                              id="startTime"
+                              minutesStep={1}
+                              okLabel="OK"
+                              onChange={[Function]}
+                              pedantic={false}
+                              style={Object {}}
+                              value={2017-06-13T07:00:00.000Z}
+                    />
+          </div>
+          <div
+                    style={
+                              Object {
+                                        "display": "flex",
+                                        "flex": 1,
+                                        "flexDirection": "row",
+                                        "justifyContent": "space-around",
+                                        "marginBottom": 10,
+                                        "marginTop": 10,
+                                      }
+                    }
+          >
+                    <DatePicker
+                              autoOk={false}
+                              container="dialog"
+                              disableYearSelection={false}
+                              disabled={false}
+                              errorText={false}
+                              firstDayOfWeek={1}
+                              hideCalendarDate={false}
+                              hintText="End Date"
+                              id="endDate"
+                              onChange={[Function]}
+                              openToYearSelection={false}
+                              style={Object {}}
+                              value={2017-06-13T07:00:00.000Z}
+                    />
+                    <TimePicker
+                              autoOk={false}
+                              cancelLabel="Cancel"
+                              defaultTime={null}
+                              disabled={false}
+                              errorText={false}
+                              format="ampm"
+                              hintText="End Time"
+                              id="endTime"
+                              minutesStep={1}
+                              okLabel="OK"
+                              onChange={[Function]}
+                              pedantic={false}
+                              style={Object {}}
+                              value={2017-06-13T07:00:00.000Z}
+                    />
+          </div>
+</form>,
+        "modal": false,
+        "onRequestClose": [Function],
+        "open": true,
+        "repositionOnUpdate": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              style={
+                            Object {
+                                          "textAlign": "center",
+                                        }
+              }
+>
+              Add Event
+</h2>,
+            <div
+              style={
+                            Object {
+                                          "display": "flex",
+                                          "flex": 1,
+                                          "flexDirection": "row",
+                                          "justifyContent": "space-around",
+                                          "marginBottom": 10,
+                                          "marginTop": 10,
+                                        }
+              }
+>
+              <TextField
+                            disabled={false}
+                            errorText={false}
+                            floatingLabelFixed={false}
+                            floatingLabelText="Event Name"
+                            fullWidth={false}
+                            id="eventName"
+                            multiLine={false}
+                            onChange={[Function]}
+                            rows={1}
+                            type="text"
+                            underlineShow={true}
+                            value=""
+              />
+              <TextField
+                            disabled={false}
+                            errorText={false}
+                            floatingLabelFixed={false}
+                            floatingLabelText="Event Room"
+                            fullWidth={false}
+                            id="roomName"
+                            multiLine={false}
+                            onChange={[Function]}
+                            rows={1}
+                            type="text"
+                            underlineShow={true}
+                            value=""
+              />
+</div>,
+            <div
+              style={
+                            Object {
+                                          "display": "flex",
+                                          "flex": 1,
+                                          "flexDirection": "row",
+                                          "justifyContent": "space-around",
+                                          "marginBottom": 10,
+                                          "marginTop": 10,
+                                        }
+              }
+>
+              <DatePicker
+                            autoOk={false}
+                            container="dialog"
+                            disableYearSelection={false}
+                            disabled={false}
+                            errorText={false}
+                            firstDayOfWeek={1}
+                            hideCalendarDate={false}
+                            hintText="Start Date"
+                            id="startDate"
+                            onChange={[Function]}
+                            openToYearSelection={false}
+                            style={Object {}}
+                            value={2017-06-13T07:00:00.000Z}
+              />
+              <TimePicker
+                            autoOk={false}
+                            cancelLabel="Cancel"
+                            defaultTime={null}
+                            disabled={false}
+                            errorText={false}
+                            format="ampm"
+                            hintText="Start Time"
+                            id="startTime"
+                            minutesStep={1}
+                            okLabel="OK"
+                            onChange={[Function]}
+                            pedantic={false}
+                            style={Object {}}
+                            value={2017-06-13T07:00:00.000Z}
+              />
+</div>,
+            <div
+              style={
+                            Object {
+                                          "display": "flex",
+                                          "flex": 1,
+                                          "flexDirection": "row",
+                                          "justifyContent": "space-around",
+                                          "marginBottom": 10,
+                                          "marginTop": 10,
+                                        }
+              }
+>
+              <DatePicker
+                            autoOk={false}
+                            container="dialog"
+                            disableYearSelection={false}
+                            disabled={false}
+                            errorText={false}
+                            firstDayOfWeek={1}
+                            hideCalendarDate={false}
+                            hintText="End Date"
+                            id="endDate"
+                            onChange={[Function]}
+                            openToYearSelection={false}
+                            style={Object {}}
+                            value={2017-06-13T07:00:00.000Z}
+              />
+              <TimePicker
+                            autoOk={false}
+                            cancelLabel="Cancel"
+                            defaultTime={null}
+                            disabled={false}
+                            errorText={false}
+                            format="ampm"
+                            hintText="End Time"
+                            id="endTime"
+                            minutesStep={1}
+                            okLabel="OK"
+                            onChange={[Function]}
+                            pedantic={false}
+                            style={Object {}}
+                            value={2017-06-13T07:00:00.000Z}
+              />
+</div>,
+          ],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Add Event",
+              "style": Object {
+                "textAlign": "center",
+              },
+            },
+            "ref": null,
+            "rendered": "Add Event",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <TextField
+                  disabled={false}
+                  errorText={false}
+                  floatingLabelFixed={false}
+                  floatingLabelText="Event Name"
+                  fullWidth={false}
+                  id="eventName"
+                  multiLine={false}
+                  onChange={[Function]}
+                  rows={1}
+                  type="text"
+                  underlineShow={true}
+                  value=""
+/>,
+                <TextField
+                  disabled={false}
+                  errorText={false}
+                  floatingLabelFixed={false}
+                  floatingLabelText="Event Room"
+                  fullWidth={false}
+                  id="roomName"
+                  multiLine={false}
+                  onChange={[Function]}
+                  rows={1}
+                  type="text"
+                  underlineShow={true}
+                  value=""
+/>,
+              ],
+              "style": Object {
+                "display": "flex",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "space-around",
+                "marginBottom": 10,
+                "marginTop": 10,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "disabled": false,
+                  "errorText": false,
+                  "floatingLabelFixed": false,
+                  "floatingLabelText": "Event Name",
+                  "fullWidth": false,
+                  "id": "eventName",
+                  "multiLine": false,
+                  "onChange": [Function],
+                  "rows": 1,
+                  "type": "text",
+                  "underlineShow": true,
+                  "value": "",
+                },
+                "ref": [Function],
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "disabled": false,
+                  "errorText": false,
+                  "floatingLabelFixed": false,
+                  "floatingLabelText": "Event Room",
+                  "fullWidth": false,
+                  "id": "roomName",
+                  "multiLine": false,
+                  "onChange": [Function],
+                  "rows": 1,
+                  "type": "text",
+                  "underlineShow": true,
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <DatePicker
+                  autoOk={false}
+                  container="dialog"
+                  disableYearSelection={false}
+                  disabled={false}
+                  errorText={false}
+                  firstDayOfWeek={1}
+                  hideCalendarDate={false}
+                  hintText="Start Date"
+                  id="startDate"
+                  onChange={[Function]}
+                  openToYearSelection={false}
+                  style={Object {}}
+                  value={2017-06-13T07:00:00.000Z}
+/>,
+                <TimePicker
+                  autoOk={false}
+                  cancelLabel="Cancel"
+                  defaultTime={null}
+                  disabled={false}
+                  errorText={false}
+                  format="ampm"
+                  hintText="Start Time"
+                  id="startTime"
+                  minutesStep={1}
+                  okLabel="OK"
+                  onChange={[Function]}
+                  pedantic={false}
+                  style={Object {}}
+                  value={2017-06-13T07:00:00.000Z}
+/>,
+              ],
+              "style": Object {
+                "display": "flex",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "space-around",
+                "marginBottom": 10,
+                "marginTop": 10,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "autoOk": false,
+                  "container": "dialog",
+                  "disableYearSelection": false,
+                  "disabled": false,
+                  "errorText": false,
+                  "firstDayOfWeek": 1,
+                  "hideCalendarDate": false,
+                  "hintText": "Start Date",
+                  "id": "startDate",
+                  "onChange": [Function],
+                  "openToYearSelection": false,
+                  "style": Object {},
+                  "value": 2017-06-13T07:00:00.000Z,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "autoOk": false,
+                  "cancelLabel": "Cancel",
+                  "defaultTime": null,
+                  "disabled": false,
+                  "errorText": false,
+                  "format": "ampm",
+                  "hintText": "Start Time",
+                  "id": "startTime",
+                  "minutesStep": 1,
+                  "okLabel": "OK",
+                  "onChange": [Function],
+                  "pedantic": false,
+                  "style": Object {},
+                  "value": 2017-06-13T07:00:00.000Z,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <DatePicker
+                  autoOk={false}
+                  container="dialog"
+                  disableYearSelection={false}
+                  disabled={false}
+                  errorText={false}
+                  firstDayOfWeek={1}
+                  hideCalendarDate={false}
+                  hintText="End Date"
+                  id="endDate"
+                  onChange={[Function]}
+                  openToYearSelection={false}
+                  style={Object {}}
+                  value={2017-06-13T07:00:00.000Z}
+/>,
+                <TimePicker
+                  autoOk={false}
+                  cancelLabel="Cancel"
+                  defaultTime={null}
+                  disabled={false}
+                  errorText={false}
+                  format="ampm"
+                  hintText="End Time"
+                  id="endTime"
+                  minutesStep={1}
+                  okLabel="OK"
+                  onChange={[Function]}
+                  pedantic={false}
+                  style={Object {}}
+                  value={2017-06-13T07:00:00.000Z}
+/>,
+              ],
+              "style": Object {
+                "display": "flex",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "space-around",
+                "marginBottom": 10,
+                "marginTop": 10,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "autoOk": false,
+                  "container": "dialog",
+                  "disableYearSelection": false,
+                  "disabled": false,
+                  "errorText": false,
+                  "firstDayOfWeek": 1,
+                  "hideCalendarDate": false,
+                  "hintText": "End Date",
+                  "id": "endDate",
+                  "onChange": [Function],
+                  "openToYearSelection": false,
+                  "style": Object {},
+                  "value": 2017-06-13T07:00:00.000Z,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "autoOk": false,
+                  "cancelLabel": "Cancel",
+                  "defaultTime": null,
+                  "disabled": false,
+                  "errorText": false,
+                  "format": "ampm",
+                  "hintText": "End Time",
+                  "id": "endTime",
+                  "minutesStep": 1,
+                  "okLabel": "OK",
+                  "onChange": [Function],
+                  "pedantic": false,
+                  "style": Object {},
+                  "value": 2017-06-13T07:00:00.000Z,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "form",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

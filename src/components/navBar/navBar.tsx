@@ -9,6 +9,7 @@ import IconButton from 'material-ui/IconButton'
 import MenuItem from 'material-ui/MenuItem'
 import TextField from 'material-ui/TextField'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
+
 export default class NavBar extends React.PureComponent<{
   height: number
   date: Date

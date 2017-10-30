@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selectors with default states should be the same with addEventOpen 1`] = `false`;
+
+exports[`selectors with default states should be the same with bookingDatePositions 1`] = `
+Immutable.List [
+]
+`;
+
+exports[`selectors with default states should be the same with navBarHeight 1`] = `64`;
+
+exports[`selectors with default states should be the same with navDate 1`] = `2017-06-13T11:41:20.000Z`;
+
+exports[`selectors with default states should be the same with positionOfSelectedDate 1`] = `0`;
+
+exports[`selectors with default states should be the same with shouldNavigateToDate 1`] = `false`;

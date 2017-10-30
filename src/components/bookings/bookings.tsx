@@ -5,6 +5,7 @@ import Subheader from 'material-ui/Subheader'
 import dateIsToday from '../../utils/date/dateIsToday'
 import humanReadableDateDiff from '../../utils/date/humanReadableDateDifference'
 import pad from '../../utils/pad'
+
 export default class Bookings extends React.PureComponent<{
   bookingsByDay: { [key: string]: Booking[] }
   bookingPositionRealized: (bookingDate: Date, position: number) => any

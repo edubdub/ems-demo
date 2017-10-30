@@ -3,5 +3,10 @@
   "rules": {
     "quotemark": [true, "single", "jsx-double"],
     "space-before-function-paren": false
+  },
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true
   }
 }

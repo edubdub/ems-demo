@@ -17,18 +17,20 @@ const reducer = combineReducers({
 
 const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const sagaMiddleware = createSagaMiddleware()
-export const store = createStore(
+export const getStore = () => {
+  const store = createStore(
   reducer,
   composeEnhancers(
     applyMiddleware(
       sagaMiddleware
     )
   )
-
 )
-sagaMiddleware.run(function* rootSaga() {
-  yield all([
-    bookingSaga(),
-    globalEventsSaga()
-  ])
-})
+  sagaMiddleware.run(function* rootSaga() {
+    yield all([
+      bookingSaga(),
+      globalEventsSaga()
+    ])
+  })
+  return store
+}
