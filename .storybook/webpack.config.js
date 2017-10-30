@@ -1,5 +1,4 @@
 const path = require('path')
-console.log('this happens')
 
 // Export a function. Accept the base config as the only param.
 module.exports = (storybookBaseConfig, configType) => {

@@ -19,23 +19,32 @@ const spaceBetweenStyle = {
   marginBottom: 10
 }
 let idNonce = -1
-const defaultState = {
-  submitAttempted: false,
-  initialized: false,
-  name: '',
-  room: '',
-  valid: false,
-  startDate: new Date(),
-  startTime: addMinutesToDate(new Date(), 5),
-  endDate: new Date(),
-  endTime: addMinutesToDate(new Date(), 30),
-  errors: {
+const getDefaultState = () => {
+  // time might roll over to the next day, so make the start/endDate match
+  const startDate = new Date()
+  const startTime = addMinutesToDate(startDate, 5)
+  startDate.setDate(startTime.getDate())
+  let endDate = new Date()
+  let endTime = addMinutesToDate(endDate, 30)
+  endDate.setDate(endTime.getDate())
+  return {
+    submitAttempted: false,
+    initialized: false,
     name: '',
     room: '',
-    startDate: '',
-    startTime: '',
-    endDate: '',
-    endTime: ''
+    valid: false,
+    startDate,
+    startTime,
+    endDate,
+    endTime,
+    errors: {
+      name: '',
+      room: '',
+      startDate: '',
+      startTime: '',
+      endDate: '',
+      endTime: ''
+    }
   }
 }
 export default class Loading extends React.PureComponent<{
@@ -43,7 +52,7 @@ export default class Loading extends React.PureComponent<{
   onRequestClose: (val: boolean) => any
   onSubmit: (booking: Booking) => any
 }> {
-  state = defaultState
+  state = getDefaultState()
   attemptSubmit = () => {
     this.setState({
       submitAttempted: true
@@ -63,7 +72,7 @@ export default class Loading extends React.PureComponent<{
         })
       )
       this.notifyOfRequestClose()
-      this.setState(defaultState)
+      this.setState(getDefaultState())
     }
   }
   setValue = (valueName: string) => (event: any, newValue: string | Date) => {

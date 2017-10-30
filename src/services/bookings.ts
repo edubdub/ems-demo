@@ -6,7 +6,6 @@ export function requestBookings(maxTimeInSeconds = 3): Promise<Booking[]> {
   )
 }
 export const putBooking = (booking: Booking) => {
-  console.log('adding bookign to data', booking)
   data = [...data, booking]
   return requestBookings()
 }
