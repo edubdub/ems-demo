@@ -39,6 +39,9 @@ storiesOf('Welcome', module).add('to Storybook', () => (
         View the Fully built and deployed app
       </a>
     </h3>
+    <h3>
+      <a href="https://github.com/edubdub/ems-demo">View the Source Code</a>
+    </h3>
     <p>
       If your unfamiliar with storybooks,{' '}
       <a href="https://storybook.js.org/">it's worth checking out!</a>
