@@ -5,6 +5,7 @@ import DatePicker from 'material-ui/DatePicker'
 import TimePicker from 'material-ui/TimePicker'
 import FlatButton from 'material-ui/FlatButton'
 import addMinutesToDate from '../../utils/date/addMinutesToDate'
+import { Booking } from '../../models/booking'
 // This is a pretty lazy style, there should be a subscription / width -> style HOC
 const maxSizeForVerticalLayout = 742
 const spaceBetweenStyle = {
@@ -17,36 +18,52 @@ const spaceBetweenStyle = {
   marginTop: 10,
   marginBottom: 10
 }
+let idNonce = -1
+const defaultState = {
+  submitAttempted: false,
+  initialized: false,
+  name: '',
+  room: '',
+  valid: false,
+  startDate: new Date(),
+  startTime: addMinutesToDate(new Date(), 5),
+  endDate: new Date(),
+  endTime: addMinutesToDate(new Date(), 30),
+  errors: {
+    name: '',
+    room: '',
+    startDate: '',
+    startTime: '',
+    endDate: '',
+    endTime: ''
+  }
+}
 export default class Loading extends React.PureComponent<{
   open: boolean
   onRequestClose: (val: boolean) => any
+  onSubmit: (booking: Booking) => any
 }> {
-  state = {
-    submitAttempted: false,
-    initialized: false,
-    name: '',
-    room: '',
-    valid: false,
-    startDate: new Date(),
-    startTime: addMinutesToDate(new Date(), 5),
-    endDate: new Date(),
-    endTime: addMinutesToDate(new Date(), 30),
-    errors: {
-      name: '',
-      room: '',
-      startDate: '',
-      startTime: '',
-      endDate: '',
-      endTime: ''
-    }
-  }
+  state = defaultState
   attemptSubmit = () => {
     this.setState({
       submitAttempted: true
     })
     const valid = this.validate()
     if (valid) {
-      alert('Valid')
+      this.props.onSubmit(
+        new Booking({
+          id: idNonce--,
+          eventName: this.state.name,
+          roomName: this.state.room,
+          start: this.combineDateTimes(
+            this.state.startDate,
+            this.state.startTime
+          ),
+          end: this.combineDateTimes(this.state.endDate, this.state.endTime)
+        })
+      )
+      this.notifyOfRequestClose()
+      this.setState(defaultState)
     }
   }
   setValue = (valueName: string) => (event: any, newValue: string | Date) => {

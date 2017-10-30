@@ -5,9 +5,13 @@ export function requestBookings(maxTimeInSeconds = 3): Promise<Booking[]> {
     setTimeout(() => resolve(data), randomTimeInSeconds)
   )
 }
-
+export const putBooking = (booking: Booking) => {
+  console.log('adding bookign to data', booking)
+  data = [...data, booking]
+  return requestBookings()
+}
 // since it's here, we might as well use it in our tests
-export const data: Booking[] = [
+export let data: Booking[] = [
   {
     id: 0,
     eventName: 'Test Booking 01',

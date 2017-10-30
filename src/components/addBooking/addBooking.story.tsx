@@ -4,8 +4,16 @@ import { action } from '@storybook/addon-actions'
 import AddBooking from './addBooking'
 storiesOf('components/addBooking', module)
   .add('open', () => (
-    <AddBooking open onRequestClose={action('requestClose')} />
+    <AddBooking
+      open
+      onRequestClose={action('requestClose')}
+      onSubmit={action('onSubmit')}
+    />
   ))
   .add('closed', () => (
-    <AddBooking open={false} onRequestClose={action('requestClose')} />
+    <AddBooking
+      open={false}
+      onRequestClose={action('requestClose')}
+      onSubmit={action('onSubmit')}
+    />
   ))

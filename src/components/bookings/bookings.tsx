@@ -9,58 +9,58 @@ export default class Bookings extends React.PureComponent<{
   bookingsByDay: { [key: string]: Booking[] }
   bookingPositionRealized: (bookingDate: Date, position: number) => any
 }> {
+  notifyOfBookingPosition = (date: string) => (el: HTMLSpanElement | null) => {
+    if (el) {
+      this.props.bookingPositionRealized(
+        new Date(date),
+        window.scrollY + el.getBoundingClientRect().top
+      )
+    }
+  }
+
   render() {
     return (
-      <div style={{ flex: 1, flexDirection: 'column' }}>
-        <div style={{ flex: 0 }}>
-          {Object.keys(this.props.bookingsByDay)
-            .sort()
-            .reduce(
-              (all, date) => {
-                all.push(
-                  <Paper
-                    key={date + '-subHeader'}
-                    style={{ marginBottom: 5, marginTop: 5 }}
-                  >
-                    <Paper>
-                      <span
-                        ref={el =>
-                          el &&
-                          this.props.bookingPositionRealized(
-                            new Date(date),
-                            el.getBoundingClientRect().top
-                          )}
-                      >
-                        <Subheader>
-                          {dateIsToday(date) && 'Today'}
-                          {new Date(date).toLocaleDateString()}
-                        </Subheader>
-                      </span>
+      <div style={{ display: 'block', maxWidth: 1024, margin: '0 auto' }}>
+        <div style={{ flex: 1, flexDirection: 'column' }}>
+          <div style={{ flex: 0 }}>
+            {Object.keys(this.props.bookingsByDay)
+              .sort()
+              .reduce(
+                (all, date) => {
+                  all.push(
+                    <Paper
+                      key={date + '-subHeader'}
+                      style={{ marginBottom: 5, marginTop: 5 }}
+                    >
+                      <Paper>
+                        <span ref={this.notifyOfBookingPosition(date)}>
+                          <Subheader>
+                            {dateIsToday(date) && 'Today '}
+                            {new Date(date).toLocaleDateString()}
+                          </Subheader>
+                        </span>
+                      </Paper>
+                      <BookingsList
+                        bookings={this.props.bookingsByDay[date] || []}
+                      />
                     </Paper>
-                    <BookingsList
-                      bookings={this.props.bookingsByDay[date] || []}
-                    />
-                  </Paper>
-                )
-                return all
-              },
-              [] as JSX.Element[]
-            )}
-        </div>
-        <div
-          style={{
-            flex: 1,
-            width: '100%',
-            minHeight: 1000,
-            height: '100%',
-            overflow: 'hidden',
-            background:
-              'url(https://i.redd.it/bqjvrehhmkhz.jpg) no-repeat center center fixed',
-            textAlign: 'center',
-            color: 'white'
-          }}
-        >
-          <h1>Look something cute to over scroll into</h1>
+                  )
+                  return all
+                },
+                [] as JSX.Element[]
+              )}
+          </div>
+          <div
+            style={{
+              flex: 1,
+              width: '100%',
+              minHeight: 1000,
+              height: '100%',
+              overflow: 'hidden',
+              textAlign: 'center',
+              color: 'white'
+            }}
+          />
         </div>
       </div>
     )

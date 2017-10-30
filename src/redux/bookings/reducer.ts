@@ -19,16 +19,25 @@ export class BookingState extends Record(initialState) {
 const defaultState = new BookingState(initialState)
 const reducer = handleActions({
   [actions.LOAD_BOOKINGS](state: BookingState) {
-    return state.set('bookings', List()).set('loading', true)
+    return state.set('bookings', List())
   },
   [actions.SET_BOOKINGS](state: BookingState, action: Action<Booking[]>) {
-    return state.set('bookings', action.payload).set('loading', false)
+    return state.set('bookings', action.payload)
   },
   [actions.SET_SEARCH_TERMS](state: BookingState, action: Action<string>) {
     return state.set('searchTerms', action.payload)
   },
   [actions.SET_USE_FUZZY_SEARCH](state: BookingState, action: Action<boolean>) {
     return state.set('useFuzzySearch', action.payload)
+  },
+  [actions.ADD_BOOKING](state: BookingState, action: Action<Booking>) {
+    if (action.payload) {
+      return state.set('bookings', state.bookings.push(action.payload))
+    }
+    return state
+  },
+  [actions.SET_BOOKING_LOADING] (state: BookingState, action: Action<boolean>) {
+    return state.set('loading', action.payload)
   }
 } as any, defaultState)
 

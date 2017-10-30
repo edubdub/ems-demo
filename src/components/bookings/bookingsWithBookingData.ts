@@ -1,7 +1,6 @@
 import Bookings from './bookings'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { lifecycle } from 'recompose'
 import { IState } from '../../redux/store'
 import selectors from '../../redux/selectors'
 import Loading from '../../hoc/loading/loadingHOC'
@@ -15,10 +14,5 @@ export default compose(
       bookingPositionRealized: actionsCreators.ui.setBookingDateWindowPosition
     }
   ),
-  lifecycle<{loadBookings: typeof actionsCreators.bookings.loadBookings}, any>({
-    componentDidMount () {
-      this.props.loadBookings()
-    }
-  }),
   Loading(selectors.bookings.loading)
 )(Bookings)

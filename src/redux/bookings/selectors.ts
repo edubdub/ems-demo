@@ -39,7 +39,7 @@ const selectBookings = createSelector(
   (searchableBookings, searchTerm, bookings) => searchTerm ? searchableBookings.search(searchTerm) : bookings)
 const bookingsByDate = createSelector(selectBookings, (bookings: Array<Booking>) => {
   return bookings.reduce((map, b) => {
-    const bookingDate = new Date(b.start).toISOString()
+    const bookingDate = b.start.toISOString()
     map[bookingDate] = map[bookingDate] || []
     map[bookingDate].push(b)
     return map
