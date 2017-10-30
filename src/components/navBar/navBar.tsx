@@ -25,8 +25,15 @@ export default class NavBar extends React.PureComponent<{
     searchMode: false
   }
   // blur and clicking x can happen at the same time
-  switchToDateMode = () => this.setState({ searchMode: false })
-  switchToSearchMode = () => this.setState({ searchMode: true })
+  switchToDateMode = () => {
+    this.notifyOfSearchTermChange(null, '')
+    this.setState({ searchMode: false })
+  }
+  switchToSearchMode = () => {
+    // this is just lazy, but it's late and I just discovered this bug before closing the laptop
+    window.scrollTo(0, 0)
+    this.setState({ searchMode: true })
+  }
   heightRendered = (e: HTMLDivElement) =>
     e && this.props.heightRealized(e.getBoundingClientRect().height)
   notifyOfDateChange = (e: any, date: Date) => this.props.onDateChange(date)
