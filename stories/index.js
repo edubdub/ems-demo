@@ -34,10 +34,32 @@ storiesOf('Welcome', module).add('to Storybook', () => (
       Thanks for checking out my{' '}
       <button onClick={linkTo('App')}>Demo App</button>!
     </h2>
+    <h3>
+      <a href="https://edubdub.github.io/ems-demo/build/">
+        View the Fully built and deployed app
+      </a>
+    </h3>
     <p>
       If your unfamiliar with storybooks,{' '}
-      <a href="https://storybook.js.org/">they are worth checking out!</a>
+      <a href="https://storybook.js.org/">it's worth checking out!</a>
     </p>
+    <h2>Some notes about the app.</h2>
+    <h3>unit tests</h3>
+    <p>
+      Some things are unit tested, some are not. I would prefer to thoroughly
+      test all my util function, better tests on components, etc... Most tests
+      are just snapshots because they are much faster, and have a pretty decent
+      ROI. However, this app is just a demo, and I don't have any more time to
+      do great unit tests.
+    </p>
+    <h3>Technologies</h3>
+    <ul>
+      <li>React</li>
+      <li>Redux</li>
+      <li>Redux Sagas</li>
+      <li>Typescript</li>
+      <li>Material UI</li>
+    </ul>
   </div>
 ))
 

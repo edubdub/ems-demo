@@ -1,3 +1,12 @@
+## EMS Demo
+
+This readme is relatively unchanged from the create react app readme.
+
+In addition, storybooks were added, and there some more notes in the [storybook homepage](https://edubdub.github.io/ems-demo/)
+
+[You can build the full build here](https://edubdub.github.io/ems-demo/build/)
+
+---------
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

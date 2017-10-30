@@ -2,6 +2,7 @@
   "name": "bookings",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://edubdub.github.io/ems-demo/build",
   "dependencies": {
     "@storybook/addon-storyshots": "^3.2.13",
     "@types/fuse": "^2.5.2",
@@ -20,6 +21,9 @@
     "reselect": "^3.0.1"
   },
   "scripts": {
+    "predeploy":
+      "npm run build:storybook && npm run build && cp -r build .out/",
+    "deploy": "gh-pages -d .out",
     "start": "react-scripts-ts start",
     "dev": "",
     "build:storybook": "build-storybook -c .storybook -o .out",
@@ -49,6 +53,7 @@
     "@types/storybook__react": "^3.0.5",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.2",
+    "gh-pages": "^1.0.0",
     "lodash.debounce": "^4.0.8",
     "react-scripts-ts": "2.8.0",
     "react-transition-group": "1.x",
