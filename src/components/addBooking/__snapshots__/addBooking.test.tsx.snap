@@ -128,8 +128,8 @@ ShallowWrapper {
                         disabled={false}
                         errorText={false}
                         firstDayOfWeek={1}
+                        floatingLabelText="Start Date"
                         hideCalendarDate={false}
-                        hintText="Start Date"
                         id="startDate"
                         onChange={[Function]}
                         openToYearSelection={false}
@@ -142,8 +142,8 @@ ShallowWrapper {
                         defaultTime={null}
                         disabled={false}
                         errorText={false}
+                        floatingLabelText="Start Time"
                         format="ampm"
-                        hintText="Start Time"
                         id="startTime"
                         minutesStep={1}
                         okLabel="OK"
@@ -172,8 +172,8 @@ ShallowWrapper {
                         disabled={false}
                         errorText={false}
                         firstDayOfWeek={1}
+                        floatingLabelText="End Date"
                         hideCalendarDate={false}
-                        hintText="End Date"
                         id="endDate"
                         onChange={[Function]}
                         openToYearSelection={false}
@@ -186,8 +186,8 @@ ShallowWrapper {
                         defaultTime={null}
                         disabled={false}
                         errorText={false}
+                        floatingLabelText="End Time"
                         format="ampm"
-                        hintText="End Time"
                         id="endTime"
                         minutesStep={1}
                         okLabel="OK"
@@ -279,8 +279,8 @@ ShallowWrapper {
                         disabled={false}
                         errorText={false}
                         firstDayOfWeek={1}
+                        floatingLabelText="Start Date"
                         hideCalendarDate={false}
-                        hintText="Start Date"
                         id="startDate"
                         onChange={[Function]}
                         openToYearSelection={false}
@@ -293,8 +293,8 @@ ShallowWrapper {
                         defaultTime={null}
                         disabled={false}
                         errorText={false}
+                        floatingLabelText="Start Time"
                         format="ampm"
-                        hintText="Start Time"
                         id="startTime"
                         minutesStep={1}
                         okLabel="OK"
@@ -323,8 +323,8 @@ ShallowWrapper {
                         disabled={false}
                         errorText={false}
                         firstDayOfWeek={1}
+                        floatingLabelText="End Date"
                         hideCalendarDate={false}
-                        hintText="End Date"
                         id="endDate"
                         onChange={[Function]}
                         openToYearSelection={false}
@@ -337,8 +337,8 @@ ShallowWrapper {
                         defaultTime={null}
                         disabled={false}
                         errorText={false}
+                        floatingLabelText="End Time"
                         format="ampm"
-                        hintText="End Time"
                         id="endTime"
                         minutesStep={1}
                         okLabel="OK"
@@ -473,8 +473,8 @@ ShallowWrapper {
                 disabled={false}
                 errorText={false}
                 firstDayOfWeek={1}
+                floatingLabelText="Start Date"
                 hideCalendarDate={false}
-                hintText="Start Date"
                 id="startDate"
                 onChange={[Function]}
                 openToYearSelection={false}
@@ -487,8 +487,8 @@ ShallowWrapper {
                 defaultTime={null}
                 disabled={false}
                 errorText={false}
+                floatingLabelText="Start Time"
                 format="ampm"
-                hintText="Start Time"
                 id="startTime"
                 minutesStep={1}
                 okLabel="OK"
@@ -520,8 +520,8 @@ ShallowWrapper {
                 "disabled": false,
                 "errorText": false,
                 "firstDayOfWeek": 1,
+                "floatingLabelText": "Start Date",
                 "hideCalendarDate": false,
-                "hintText": "Start Date",
                 "id": "startDate",
                 "onChange": [Function],
                 "openToYearSelection": false,
@@ -542,8 +542,8 @@ ShallowWrapper {
                 "defaultTime": null,
                 "disabled": false,
                 "errorText": false,
+                "floatingLabelText": "Start Time",
                 "format": "ampm",
-                "hintText": "Start Time",
                 "id": "startTime",
                 "minutesStep": 1,
                 "okLabel": "OK",
@@ -572,8 +572,8 @@ ShallowWrapper {
                 disabled={false}
                 errorText={false}
                 firstDayOfWeek={1}
+                floatingLabelText="End Date"
                 hideCalendarDate={false}
-                hintText="End Date"
                 id="endDate"
                 onChange={[Function]}
                 openToYearSelection={false}
@@ -586,8 +586,8 @@ ShallowWrapper {
                 defaultTime={null}
                 disabled={false}
                 errorText={false}
+                floatingLabelText="End Time"
                 format="ampm"
-                hintText="End Time"
                 id="endTime"
                 minutesStep={1}
                 okLabel="OK"
@@ -619,8 +619,8 @@ ShallowWrapper {
                 "disabled": false,
                 "errorText": false,
                 "firstDayOfWeek": 1,
+                "floatingLabelText": "End Date",
                 "hideCalendarDate": false,
-                "hintText": "End Date",
                 "id": "endDate",
                 "onChange": [Function],
                 "openToYearSelection": false,
@@ -641,8 +641,8 @@ ShallowWrapper {
                 "defaultTime": null,
                 "disabled": false,
                 "errorText": false,
+                "floatingLabelText": "End Time",
                 "format": "ampm",
-                "hintText": "End Time",
                 "id": "endTime",
                 "minutesStep": 1,
                 "okLabel": "OK",
@@ -776,8 +776,8 @@ ShallowWrapper {
                               disabled={false}
                               errorText={false}
                               firstDayOfWeek={1}
+                              floatingLabelText="Start Date"
                               hideCalendarDate={false}
-                              hintText="Start Date"
                               id="startDate"
                               onChange={[Function]}
                               openToYearSelection={false}
@@ -790,8 +790,8 @@ ShallowWrapper {
                               defaultTime={null}
                               disabled={false}
                               errorText={false}
+                              floatingLabelText="Start Time"
                               format="ampm"
-                              hintText="Start Time"
                               id="startTime"
                               minutesStep={1}
                               okLabel="OK"
@@ -820,8 +820,8 @@ ShallowWrapper {
                               disabled={false}
                               errorText={false}
                               firstDayOfWeek={1}
+                              floatingLabelText="End Date"
                               hideCalendarDate={false}
-                              hintText="End Date"
                               id="endDate"
                               onChange={[Function]}
                               openToYearSelection={false}
@@ -834,8 +834,8 @@ ShallowWrapper {
                               defaultTime={null}
                               disabled={false}
                               errorText={false}
+                              floatingLabelText="End Time"
                               format="ampm"
-                              hintText="End Time"
                               id="endTime"
                               minutesStep={1}
                               okLabel="OK"
@@ -927,8 +927,8 @@ ShallowWrapper {
                             disabled={false}
                             errorText={false}
                             firstDayOfWeek={1}
+                            floatingLabelText="Start Date"
                             hideCalendarDate={false}
-                            hintText="Start Date"
                             id="startDate"
                             onChange={[Function]}
                             openToYearSelection={false}
@@ -941,8 +941,8 @@ ShallowWrapper {
                             defaultTime={null}
                             disabled={false}
                             errorText={false}
+                            floatingLabelText="Start Time"
                             format="ampm"
-                            hintText="Start Time"
                             id="startTime"
                             minutesStep={1}
                             okLabel="OK"
@@ -971,8 +971,8 @@ ShallowWrapper {
                             disabled={false}
                             errorText={false}
                             firstDayOfWeek={1}
+                            floatingLabelText="End Date"
                             hideCalendarDate={false}
-                            hintText="End Date"
                             id="endDate"
                             onChange={[Function]}
                             openToYearSelection={false}
@@ -985,8 +985,8 @@ ShallowWrapper {
                             defaultTime={null}
                             disabled={false}
                             errorText={false}
+                            floatingLabelText="End Time"
                             format="ampm"
-                            hintText="End Time"
                             id="endTime"
                             minutesStep={1}
                             okLabel="OK"
@@ -1121,8 +1121,8 @@ ShallowWrapper {
                   disabled={false}
                   errorText={false}
                   firstDayOfWeek={1}
+                  floatingLabelText="Start Date"
                   hideCalendarDate={false}
-                  hintText="Start Date"
                   id="startDate"
                   onChange={[Function]}
                   openToYearSelection={false}
@@ -1135,8 +1135,8 @@ ShallowWrapper {
                   defaultTime={null}
                   disabled={false}
                   errorText={false}
+                  floatingLabelText="Start Time"
                   format="ampm"
-                  hintText="Start Time"
                   id="startTime"
                   minutesStep={1}
                   okLabel="OK"
@@ -1168,8 +1168,8 @@ ShallowWrapper {
                   "disabled": false,
                   "errorText": false,
                   "firstDayOfWeek": 1,
+                  "floatingLabelText": "Start Date",
                   "hideCalendarDate": false,
-                  "hintText": "Start Date",
                   "id": "startDate",
                   "onChange": [Function],
                   "openToYearSelection": false,
@@ -1190,8 +1190,8 @@ ShallowWrapper {
                   "defaultTime": null,
                   "disabled": false,
                   "errorText": false,
+                  "floatingLabelText": "Start Time",
                   "format": "ampm",
-                  "hintText": "Start Time",
                   "id": "startTime",
                   "minutesStep": 1,
                   "okLabel": "OK",
@@ -1220,8 +1220,8 @@ ShallowWrapper {
                   disabled={false}
                   errorText={false}
                   firstDayOfWeek={1}
+                  floatingLabelText="End Date"
                   hideCalendarDate={false}
-                  hintText="End Date"
                   id="endDate"
                   onChange={[Function]}
                   openToYearSelection={false}
@@ -1234,8 +1234,8 @@ ShallowWrapper {
                   defaultTime={null}
                   disabled={false}
                   errorText={false}
+                  floatingLabelText="End Time"
                   format="ampm"
-                  hintText="End Time"
                   id="endTime"
                   minutesStep={1}
                   okLabel="OK"
@@ -1267,8 +1267,8 @@ ShallowWrapper {
                   "disabled": false,
                   "errorText": false,
                   "firstDayOfWeek": 1,
+                  "floatingLabelText": "End Date",
                   "hideCalendarDate": false,
-                  "hintText": "End Date",
                   "id": "endDate",
                   "onChange": [Function],
                   "openToYearSelection": false,
@@ -1289,8 +1289,8 @@ ShallowWrapper {
                   "defaultTime": null,
                   "disabled": false,
                   "errorText": false,
+                  "floatingLabelText": "End Time",
                   "format": "ampm",
-                  "hintText": "End Time",
                   "id": "endTime",
                   "minutesStep": 1,
                   "okLabel": "OK",

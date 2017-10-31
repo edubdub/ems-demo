@@ -12,7 +12,7 @@ const positionOfSelectedDate = createSelector(navDate, bookingDatePositions, (se
   }
   const position = positions
   .filter(b => !!b)
-  .find(b => !!b && b.bookingDate.getTime() > selectedDate.getTime())
+  .find(b => !!b && b.bookingDate.getTime() >= selectedDate.getTime())
   return position && position.position ? position.position : positions.get(positions.count() - 1).position
 })
 
