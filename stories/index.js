@@ -15,7 +15,7 @@ import { getStore } from '../src/redux/store'
 import 'font-awesome/css/font-awesome.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import ScreenDimensions from './ScreenDimensions'
-import { Paper } from 'material-ui'
+import { Paper, Popover } from 'material-ui'
 const store = getStore()
 addDecorator(story => <ScreenDimensions>{story()}</ScreenDimensions>)
 addDecorator(withKnobs)
@@ -54,6 +54,12 @@ storiesOf('Welcome', module).add('to Storybook', () => (
       are just snapshots because they are much faster, and have a pretty decent
       ROI. However, this app is just a demo, and I don't have any more time to
       do great unit tests.
+    </p>
+    <p>
+      There are some things I think could be done better. The addBooking
+      component validation is not very well architected. The validation should
+      live with the model. However, it's got some extra logic for validation
+      minutes and days separately, so I decided to just let it stay for now.
     </p>
     <h3>Technologies</h3>
     <ul>

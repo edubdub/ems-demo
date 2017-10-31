@@ -48,12 +48,22 @@ const getDefaultState = () => {
     }
   }
 }
-export default class Loading extends React.PureComponent<{
+interface IPropTypes {
   open: boolean
   onRequestClose: (val: boolean) => any
   onSubmit: (booking: Booking) => any
-}> {
+}
+export default class Loading extends React.PureComponent<IPropTypes> {
   state = getDefaultState()
+
+  // This is a modal that doesn't actually unmount when closed.
+  // So we need to reset state when the modal is opened, not when the
+  // component is mounted
+  componentWillReceiveProps(nextProps: IPropTypes) {
+    if (!this.props.open && nextProps.open) {
+      this.setState(getDefaultState())
+    }
+  }
   attemptSubmit = () => {
     this.setState({
       submitAttempted: true
@@ -111,7 +121,8 @@ export default class Loading extends React.PureComponent<{
   }
   notifyOfRequestClose = () => this.props.onRequestClose(false)
   focusOnStart = (tf: TextField) => {
-    // TODO: not sure why this needs a timeout, should be investigated
+    // TODO: not sure why this needs a timeout, should be investigated, I think it's because
+    // of the load in animation.
     if (!this.state.initialized && tf) {
       setTimeout(() => tf.focus(), 100)
       this.setState({

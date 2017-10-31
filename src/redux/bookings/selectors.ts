@@ -2,6 +2,7 @@ import { createSelector } from 'reselect'
 import { IState } from '../store'
 import { Booking } from '../../models/booking'
 import * as Fuse from 'fuse.js'
+import beginningOfDay from '../../utils/date/beginningOfDay'
 const fuseOptions = {
   shouldSort: false,
   threshold: 0.6,
@@ -39,7 +40,7 @@ const selectBookings = createSelector(
   (searchableBookings, searchTerm, bookings) => searchTerm ? searchableBookings.search(searchTerm) : bookings)
 const bookingsByDate = createSelector(selectBookings, (bookings: Array<Booking>) => {
   return bookings.reduce((map, b) => {
-    const bookingDate = b.start.toISOString()
+    const bookingDate = beginningOfDay(b.start).toISOString()
     map[bookingDate] = map[bookingDate] || []
     map[bookingDate].push(b)
     return map
