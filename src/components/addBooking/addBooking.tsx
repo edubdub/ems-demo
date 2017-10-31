@@ -5,6 +5,7 @@ import DatePicker from 'material-ui/DatePicker'
 import TimePicker from 'material-ui/TimePicker'
 import FlatButton from 'material-ui/FlatButton'
 import addMinutesToDate from '../../utils/date/addMinutesToDate'
+import combineDateTimes from '../../utils/date/combineDateTimes'
 import { Booking } from '../../models/booking'
 // This is a pretty lazy style, there should be a subscription / width -> style HOC
 const maxSizeForVerticalLayout = 742
@@ -64,11 +65,8 @@ export default class Loading extends React.PureComponent<{
           id: idNonce--,
           eventName: this.state.name,
           roomName: this.state.room,
-          start: this.combineDateTimes(
-            this.state.startDate,
-            this.state.startTime
-          ),
-          end: this.combineDateTimes(this.state.endDate, this.state.endTime)
+          start: combineDateTimes(this.state.startDate, this.state.startTime),
+          end: combineDateTimes(this.state.endDate, this.state.endTime)
         })
       )
       this.notifyOfRequestClose()
@@ -83,21 +81,18 @@ export default class Loading extends React.PureComponent<{
     this.setState(newState)
     this.validate(newState)
   }
-  // TODO: This should be made a util
-  combineDateTimes = (date: Date, dateTime: Date) => {
-    const combined = new Date(date.getTime())
-    combined.setHours(dateTime.getHours())
-    combined.setMinutes(dateTime.getMinutes())
-    return combined
-  }
+  // TODO: This should be refactored / moved into the model, but it's got extra complications
+  // because it's dealing with a date and time for start and end.
+
+  // Ideally this would move, but since this is just a demo, I'm leaving it here
   validate = (state = this.state) => {
-    const startTime = this.combineDateTimes(state.startDate, state.startTime)
+    const startTime = combineDateTimes(state.startDate, state.startTime)
     const startError =
       startTime.getTime() < new Date().getTime()
         ? 'You cannot schedule an event in the past'
         : ''
 
-    const endTime = this.combineDateTimes(state.endDate, state.endTime)
+    const endTime = combineDateTimes(state.endDate, state.endTime)
     const endError =
       endTime.getTime() < startTime.getTime()
         ? 'The event must end after it starts'
