@@ -2,10 +2,13 @@
 
 This readme is relatively unchanged from the create react app readme.
 
+In addition, storybooks were added, and there some more notes in the [storybook homepage](https://edubdub.github.io/ems-demo/)
+
+**Make sure to check the storybook for more docs about implementation details**
+
 [You can build the full build here](https://edubdub.github.io/ems-demo/build/)
 
 
-In addition, storybooks were added, and there some more notes in the [storybook homepage](https://edubdub.github.io/ems-demo/)
 
 run the storybook script `yarn storybook` and open [localhost:6006](http://localhost:6006) to develop with storybook
 

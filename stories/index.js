@@ -28,8 +28,8 @@ const StoreDecorator = (storyFn: Function) => (
 )
 addDecorator(StoreDecorator)
 
-storiesOf('Welcome', module).add('to Storybook', () => (
-  <div>
+storiesOf('Welcome', module).add('to EMS Demo', () => (
+  <div style={{ padding: 20 }}>
     <h2>
       Thanks for checking out my{' '}
       <button onClick={linkTo('App')}>Demo App</button>!
@@ -55,13 +55,45 @@ storiesOf('Welcome', module).add('to Storybook', () => (
       ROI. However, this app is just a demo, and I don't have any more time to
       do great unit tests.
     </p>
+    <h3>Some things I could do better</h3>
     <p>
-      There are some things I think could be done better. The addBooking
-      component validation is not very well architected. The validation should
-      live with the model. However, it's got some extra logic for validation
-      minutes and days separately, so I decided to just let it stay for now.
+      Since I spent all weekend having fun with this, and neglecting my
+      household duties, I just don't have the time to make everything perfect.
+      Here are a list of things that I wish I had time to do better.
     </p>
-    <h3>Technologies</h3>
+    <ol>
+      <li>
+        The addBooking component validation is not very well architected. The
+        validation should live with the model. However, it's got some extra
+        logic for validation minutes and days separately, so I decided to just
+        let it stay for now. There should also be way better unit tests, given
+        that it handles a lot of events locally. I just don't have the time.
+      </li>
+      <li>
+        Normally I make a configuration state in redux, and part of of that
+        would be theme information. I didn't set it up this way, and got kinda
+        lazy with styles/colors. So they aren't coming from state, and are kind
+        of mixed about. I should have made a style provider. I think MaterialUI
+        provides some built in ways to do this as well.
+      </li>
+      <li>
+        Window resizing with styles: There are a couple places with hard coded
+        variables for window sizing. This could easily be handled by a higher
+        order component that passes styles down based on window size. The window
+        size should also be kept in redux, to avoid reading it in multiple
+        places. For some reason I didn't think to do this in advance, and since
+        I am basically out of time, I am just going to leaving it for now.
+      </li>
+      <li>
+        Window resizing with styles: There are a couple places with hard coded
+        variables for window sizing. This could easily be handled by a higher
+        order component that passes styles down based on window size. The window
+        size should also be kept in redux, to avoid reading it in multiple
+        places. For some reason I didn't think to do this in advance, and since
+        I am basically out of time, I am just going to leaving it for now.
+      </li>
+    </ol>
+    <h2>Technologies</h2>
     <ul>
       <li>React</li>
       <li>Redux</li>
