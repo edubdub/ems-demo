@@ -176,7 +176,7 @@ export default class Loading extends React.PureComponent<IPropTypes> {
           <div style={spaceBetweenStyle as any}>
             <DatePicker
               id="startDate"
-              hintText="Start Date"
+              floatingLabelText="Start Date"
               value={this.state.startDate}
               onChange={this.setValue('startDate')}
               errorText={
@@ -185,7 +185,7 @@ export default class Loading extends React.PureComponent<IPropTypes> {
             />
             <TimePicker
               id="startTime"
-              hintText="Start Time"
+              floatingLabelText="Start Time"
               value={this.state.startTime}
               onChange={this.setValue('startTime')}
               errorText={
@@ -196,7 +196,7 @@ export default class Loading extends React.PureComponent<IPropTypes> {
           <div style={spaceBetweenStyle as any}>
             <DatePicker
               id="endDate"
-              hintText="End Date"
+              floatingLabelText="End Date"
               value={this.state.endDate}
               onChange={this.setValue('endDate')}
               errorText={
@@ -205,7 +205,7 @@ export default class Loading extends React.PureComponent<IPropTypes> {
             />
             <TimePicker
               id="endTime"
-              hintText="End Time"
+              floatingLabelText="End Time"
               value={this.state.endTime}
               onChange={this.setValue('endTime')}
               errorText={
