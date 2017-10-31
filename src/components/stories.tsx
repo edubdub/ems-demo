@@ -23,6 +23,6 @@ require('./loading/loading.story')
 require('./navBar/navBar.story')
 require('./bookings/bookings.story')
 require('./addBooking/addBooking.story')
-
+require('./now/now.story')
 addDecorator(CenterDecorator)
 // centered stories
